@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styled from 'styled-components'
-import Header from '../components/Header'
+import Header from '../components/header/Header'
 import ProjectItem from '../components/ProjectItem'
 
 export default function Home() {
@@ -12,23 +12,20 @@ export default function Home() {
 				<meta name='description' content='Full-stack developer' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<Main>
-				<Header />
-				<ProjectItem />
-			</Main>
+			<Header />
+			<Main>{/* <ProjectItem /> */}</Main>
 		</Container>
 	)
 }
 
 const Container = styled.div`
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 `
 
 const Main = styled.main`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	margin: 0;
+	padding: 0;
 `
