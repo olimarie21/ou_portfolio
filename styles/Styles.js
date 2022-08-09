@@ -11,11 +11,16 @@ export const font = 'Poppins, sans-serif'
 
 export const H1 = styled.h1`
 	font-weight: 900;
-	font-size: 32px;
 	color: ${globalColor.lightText};
 	margin: 0;
 	padding: 0;
 	font-family: ${font};
+	font-size: 28px;
+	line-height: 32px;
+
+	@media screen and (min-width: 700px) {
+		font-size: 32px;
+	}
 `
 
 export const H2 = styled.h2`
