@@ -7,7 +7,7 @@ const SocialNav = () => {
 		<SocialIcons>
 			<ListItem>
 				<Image
-					src={'/images/linkedin.svg'}
+					src={'/images/Vectoremail.svg'}
 					height={20}
 					width={20}
 					alt='LinkedIn Logo'
@@ -15,19 +15,21 @@ const SocialNav = () => {
 			</ListItem>
 			<ListItem>
 				<Image
-					src={'/images/linkedin.svg'}
+					src={'/images/Github-Mark.svg'}
 					height={20}
 					width={20}
 					alt='LinkedIn Logo'
 				/>
 			</ListItem>
 			<ListItem>
-				<Image
-					src={'/images/linkedin.svg'}
-					height={20}
-					width={20}
-					alt='LinkedIn Logo'
-				/>
+				<div className='linkedIn'>
+					<Image
+						src={'/images/linkedin.svg'}
+						height={20}
+						width={20}
+						alt='LinkedIn Logo'
+					/>
+				</div>
 			</ListItem>
 		</SocialIcons>
 	)
@@ -35,9 +37,10 @@ const SocialNav = () => {
 
 const SocialIcons = styled.ul`
 	display: flex;
-	gap: 8px;
+	gap: 12px;
 	height: 30px;
 	margin: 0;
+	margin-left: 24px;
 `
 
 const ListItem = styled.li`
@@ -51,6 +54,13 @@ const ListItem = styled.li`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	.linkedIn {
+		background-color: ${globalColor.primary};
+		border-radius: 8px;
+		height: 20px;
+		width: 20px;
+	}
 `
 
 export default SocialNav

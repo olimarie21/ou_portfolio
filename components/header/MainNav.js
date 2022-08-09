@@ -21,6 +21,14 @@ const MainNav = () => {
 
 				<SocialNav />
 			</Container>
+			<div className='accent'>
+				<Image
+					src={'/images/accent_profile.svg'}
+					alt='accent'
+					width={220}
+					height={220}
+				/>
+			</div>
 		</Nav>
 	)
 }
@@ -44,6 +52,17 @@ const Nav = styled.div`
 	position: absolute;
 	right: 0;
 	top: 0;
+
+	.accent {
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		@media screen and (min-width: 1200px) {
+			display: block;
+		}
+	}
 `
 
 const Container = styled.nav`
@@ -62,7 +81,7 @@ const Container = styled.nav`
 
 const MainMenu = styled.ul`
 	display: flex;
-	gap: 12px;
+	gap: 24px;
 	justify-content: space-between;
 	align-items: center;
 	height: 30px;
@@ -75,7 +94,7 @@ const ListItem = styled.li`
 	margin: 0;
 	font-size: 16px;
 	font-family: ${font};
-	font-weight: 600;
+	font-weight: 500;
 	color: ${globalColor.primary};
 	display: flex;
 	justify-content: center;

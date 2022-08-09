@@ -30,8 +30,12 @@ const Heading = styled.header`
 	margin: 0;
 	padding: 0;
 	position: relative;
-	height: 100%;
 	width: 100%;
+	height: 160px;
+
+	@media screen and (min-width: 750px) {
+		height: 274px;
+	}
 `
 
 const MobileIcon = styled.div`
