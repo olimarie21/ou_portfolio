@@ -37,10 +37,10 @@ const SocialNav = () => {
 
 const SocialIcons = styled.ul`
 	display: flex;
-	gap: 12px;
+	gap: 16px;
 	height: 30px;
 	margin: 0;
-	margin-left: 24px;
+	padding: 0 0 0 16px;
 `
 
 const ListItem = styled.li`

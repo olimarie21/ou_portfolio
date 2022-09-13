@@ -1,20 +1,50 @@
 import Image from 'next/image'
-import react from 'react'
+import { react, useState } from 'react'
 import styled from 'styled-components'
 import { globalColor, H1, font } from '../../styles/Styles'
 import MainNav from './MainNav'
+import MobileMenu from './MobileMenu'
 
 const Header = () => {
+	const [showMenu, setShowMenu] = useState(false)
+	const openMenu = () => {
+		const hamburger = document.querySelector('.button')
+
+		hamburger.classList.toggle('is-opened')
+
+		setShowMenu(!showMenu)
+	}
+
 	return (
 		<Heading>
 			<MainNav />
-			<MobileIcon>
-				<Image
-					src='/images/hamburger_menu.svg'
-					width={30}
-					height={30}
-					alt={'Menu Icon'}
-				/>
+			<MobileIcon onClick={openMenu} className={'button'}>
+				<svg className='hamburger'>
+					<line
+						strokeLinecap='round'
+						x1='0'
+						y1='50%'
+						x2='100%'
+						y2='50%'
+						className='hamburger-bar hamburger-bar-top'
+					/>
+					<line
+						strokeLinecap='round'
+						x1='0'
+						y1='50%'
+						x2='100%'
+						y2='50%'
+						className='hamburger-bar hamburger-bar-mid'
+					/>
+					<line
+						strokeLinecap='round'
+						x1='0'
+						y1='50%'
+						x2='100%'
+						y2='50%'
+						className='hamburger-bar hamburger-bar-bottom'
+					/>
+				</svg>
 			</MobileIcon>
 			<TextContainer>
 				<Text>
@@ -22,6 +52,7 @@ const Header = () => {
 					<Headline>full-stack developer</Headline>
 				</Text>
 			</TextContainer>
+			{showMenu ? <MobileMenu /> : null}
 		</Heading>
 	)
 }
@@ -36,12 +67,53 @@ const Heading = styled.header`
 	@media screen and (min-width: 750px) {
 		height: 274px;
 	}
+
+	.is-opened .hamburger .hamburger-bar-top {
+		transform: rotate(45deg);
+	}
+
+	.is-opened .hamburger .hamburger-bar-mid {
+		transform: scaleX(0.1);
+	}
+
+	.is-opened .hamburger .hamburger-bar-bottom {
+		transform: rotate(-45deg);
+	}
 `
 
-const MobileIcon = styled.div`
+const MobileIcon = styled.button`
 	position: absolute;
+	display: flex;
+	flex-direction: column;
 	top: 5vh;
-	right: 34px;
+	right: 32px;
+	border: none;
+	background: none;
+	cursor: pointer;
+	padding: 0;
+	z-index: 105;
+
+	.hamburger {
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+
+		.hamburger-bar {
+			transition-property: transform;
+			transition-duration: 0.3s;
+			transform-origin: center;
+			stroke: ${globalColor.primary};
+			stroke-width: 10%;
+		}
+
+		.hamburger-bar-top {
+			transform: translateY(-40%);
+		}
+
+		.hamburger-bar-bottom {
+			transform: translateY(40%);
+		}
+	}
 
 	@media screen and (min-width: 750px) {
 		top: 8vh;
@@ -83,18 +155,17 @@ const Text = styled.div`
 	margin-top: 38px;
 
 	@media screen and (min-width: 750px) {
-		margin-top: 64px;
-		margin-left: 150px;
+		margin-top: 8vh;
+		margin-left: 10vw;
 	}
 `
 
 const Headline = styled.p`
 	font-weight: 300;
 	font-size: 14px;
-	// line-height: 24px;
 	color: ${globalColor.lightText};
 	margin: 0;
-	margin-top: 0px;
+	margin-top: 8px;
 	padding: 0;
 	font-family: ${font};
 

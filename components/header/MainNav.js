@@ -1,14 +1,11 @@
 import Image from 'next/image'
 import styled from 'styled-components'
 import SocialNav from './SocialNav'
-import { globalColor, H1, font } from '../../styles/Styles'
+import { globalColor, font } from '../../styles/Styles'
 
 const MainNav = () => {
 	return (
 		<Nav>
-			<ImageContainer>
-				<HeaderImg src={'/images/secondary_bg.svg'} alt='background image' />
-			</ImageContainer>
 			<Container>
 				<MainMenu>
 					<ListItem>
@@ -33,20 +30,6 @@ const MainNav = () => {
 	)
 }
 
-const HeaderImg = styled.img`
-	width: 100vw;
-	object-fit: cover;
-`
-
-const ImageContainer = styled.div`
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-`
-
 const Nav = styled.div`
 	width: 100vw;
 	position: absolute;
@@ -70,18 +53,18 @@ const Container = styled.nav`
 	@media screen and (min-width: 1200px) {
 		display: flex;
 		justify-content: end;
-		gap: 16px;
+		gap: 20px;
 		align-items: start;
 		position: absolute;
 		top: 0;
-		right: 168px;
-		padding-top: 64px;
+		right: 10vw;
+		padding-top: 8vh;
 	}
 `
 
 const MainMenu = styled.ul`
 	display: flex;
-	gap: 24px;
+	gap: 32px;
 	justify-content: space-between;
 	align-items: center;
 	height: 30px;
