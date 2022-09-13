@@ -4,8 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import { Navigation, Pagination } from 'swiper'
 import ProjectItem from './ProjectItem'
-import { globalColor, H2, font } from '../styles/Styles'
-import projects from '../text/projects.json'
+import { globalColor, H2, font } from '../../styles/Styles'
+import projects from '../../text/projects.json'
 
 const ProjectSlider = (props) => {
 	console.log(projects)

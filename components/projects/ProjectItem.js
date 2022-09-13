@@ -1,7 +1,7 @@
 import react from 'react'
 import Image from 'next/image'
 import styled from 'styled-components'
-import { globalColor, H2, H3, H4, Paragraph, font } from '../styles/Styles'
+import { globalColor, H2, H3, H4, Paragraph, font } from '../../styles/Styles'
 
 const ProjectItem = (props) => {
 	const { title, gitLink, shortDesc, tech } = props
