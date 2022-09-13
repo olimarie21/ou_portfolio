@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styled from 'styled-components'
 import Header from '../components/header/Header'
 import ProjectItem from '../components/ProjectItem'
+import ProjectSlider from '../components/ProjectSlider'
 
 export default function Home() {
 	return (
@@ -14,7 +15,7 @@ export default function Home() {
 			</Head>
 			<Header />
 			<Main>
-				<ProjectItem />
+				<ProjectSlider />
 			</Main>
 		</Container>
 	)
