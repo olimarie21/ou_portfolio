@@ -3,7 +3,9 @@ import Image from 'next/image'
 import styled from 'styled-components'
 import { globalColor, H2, H3, H4, Paragraph, font } from '../styles/Styles'
 
-const ProjectItem = () => {
+const ProjectItem = (props) => {
+	const { title, gitLink, shortDesc, tech } = props
+
 	return (
 		<Container>
 			<BGImg>
@@ -17,28 +19,22 @@ const ProjectItem = () => {
 			</BGImg>
 			<DescContainer>
 				<div className='titleContainer'>
-					<H3>Courte</H3>
+					<H3>{title}</H3>
 
-					<a href='#'>
+					<a href={gitLink}>
 						<Image
 							src={'/images/Github-Mark.svg'}
 							height={20}
 							width={20}
-							alt='LinkedIn Logo'
+							alt='Github Logo'
 						/>
 					</a>
 				</div>
-				<Paragraph>
-					A mobile application that facilitates the use and sharing of tennis
-					courts.
-				</Paragraph>
+				<Paragraph>{shortDesc}</Paragraph>
 
 				<div className='projectDetailDisplay'>
 					<H4>Tech Stack</H4>
-					<p>
-						React Native, Expo, Express, Node.js, MongoDB, Firebase
-						Authentication, Google Auth, GraphQL Apollo
-					</p>
+					<p>{tech.join(', ')}</p>
 
 					<button onClick={() => console.log('click')}>
 						Ready to learn more?
@@ -54,7 +50,8 @@ const Container = styled.div`
 	height: 342px;
 	width: 316px;
 	position: relative;
-	margin-top: 20px;
+	// margin-top: 20px;
+	margin: 0;
 	border-radius: 90px;
 `
 
@@ -106,7 +103,7 @@ const DescContainer = styled.div`
 		height: 100%;
 		border-radius: 90px 90px 40px 40px;
 		padding: 0 12%;
-		border: 0.5px solid ${globalColor.primary};
+		// border: 0.5px solid ${globalColor.primary};
 
 		.projectDetailDisplay {
 			display: flex;
