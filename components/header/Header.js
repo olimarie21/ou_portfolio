@@ -9,9 +9,7 @@ const Header = () => {
 	const [showMenu, setShowMenu] = useState(false)
 	const openMenu = () => {
 		const hamburger = document.querySelector('.button')
-
 		hamburger.classList.toggle('is-opened')
-
 		setShowMenu(!showMenu)
 	}
 
@@ -86,7 +84,7 @@ const MobileIcon = styled.button`
 	display: flex;
 	flex-direction: column;
 	top: 5vh;
-	right: 32px;
+	right: 8vw;
 	border: none;
 	background: none;
 	cursor: pointer;
@@ -150,9 +148,9 @@ const Text = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: start;
-	margin-left: 34px;
+	margin-left: 10vw;
 	text-align: left;
-	margin-top: 38px;
+	margin-top: 5vh;
 
 	@media screen and (min-width: 750px) {
 		margin-top: 8vh;
