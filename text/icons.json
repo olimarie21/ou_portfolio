@@ -1,0 +1,54 @@
+[
+    {
+        "link": "/images/logos/javascript_logo.png",
+        "alt": "javascript"
+    },
+    {
+        "link": "/images/logos/node_logo.png",
+        "alt": "node.js"
+    },
+    {
+        "link": "/images/logos/express_logo.png",
+        "alt": "express.js"
+    },
+    {
+        "link": "/images/logos/graphql_logo.png",
+        "alt": "graphql"
+    },
+    {
+        "link": "/images/logos/css_logo.png",
+        "alt": "css3"
+    },
+    {
+        "link": "/images/logos/nextjs_logo.png",
+        "alt": "nextjs"
+    },
+    {
+        "link": "/images/logos/sass_logo.png",
+        "alt": "sass"
+    },
+    {
+        "link": "/images/logos/vercel_logo.png",
+        "alt": "vercel"
+    },
+    {
+        "link": "/images/logos/mongodb1_logo.png",
+        "alt": "mongodb"
+    },
+    {
+        "link": "/images/logos/firebase_logo.png",
+        "alt": "firebase"
+    },
+    {
+        "link": "/images/logos/html_logo.png",
+        "alt": "html5"
+    },
+    {
+        "link": "/images/logos/expo_logo1.png",
+        "alt": "expo"
+    },
+    {
+        "link": "/images/logos/ec2_logo.png",
+        "alt": "aws ec2"
+    }
+]
