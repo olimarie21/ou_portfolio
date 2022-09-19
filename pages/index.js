@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styled from 'styled-components'
+import Footer from '../components/Footer'
 import Header from '../components/header/Header'
-import ProjectItem from '../components/projects/ProjectItem'
 import ProjectSlider from '../components/projects/ProjectSlider'
+import TechContainer from '../components/techDisplay/TechContainer'
 
 export default function Home() {
 	return (
@@ -16,7 +16,9 @@ export default function Home() {
 			<Header />
 			<Main>
 				<ProjectSlider />
+				<TechContainer />
 			</Main>
+			<Footer />
 		</Container>
 	)
 }
@@ -26,11 +28,12 @@ const Container = styled.div`
 	height: 100vh;
 	margin: 0;
 	padding: 0;
-	display: flex;
-	flex-direction: column;
+	overflow-x: hidden;
 `
 
 const Main = styled.main`
 	margin: 0;
 	padding: 0;
+	display: flex;
+	flex-direction: column;
 `
