@@ -9,6 +9,8 @@ export const globalColor = {
 
 export const font = 'Poppins, sans-serif'
 
+export const pageMargin = '0 10vw 5vh 10vw'
+
 export const H1 = styled.h1`
 	font-weight: 900;
 	color: ${globalColor.lightText};
@@ -48,7 +50,7 @@ export const H4 = styled.h4`
 	margin: 0;
 `
 
-export const h4_light = styled.h4`
+export const H4_light = styled.h4`
 	font-weight: 700;
 	font-size: 16px;
 	color: ${globalColor.lightText};
