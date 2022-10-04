@@ -1,54 +1,54 @@
 [
     {
         "link": "/images/logos/javascript_logo.png",
-        "alt": "javascript"
+        "alt": "JavaScript"
     },
     {
         "link": "/images/logos/node_logo.png",
-        "alt": "node.js"
+        "alt": "Node.js"
     },
     {
         "link": "/images/logos/express_logo.png",
-        "alt": "express.js"
+        "alt": "Express.js"
     },
     {
         "link": "/images/logos/graphql_logo.png",
-        "alt": "graphql"
+        "alt": "GraphQL"
     },
     {
         "link": "/images/logos/css_logo.png",
-        "alt": "css3"
+        "alt": "CSS"
     },
     {
         "link": "/images/logos/nextjs_logo.png",
-        "alt": "nextjs"
+        "alt": "Next.js"
     },
     {
         "link": "/images/logos/sass_logo.png",
-        "alt": "sass"
+        "alt": "Sass"
     },
     {
         "link": "/images/logos/vercel_logo.png",
-        "alt": "vercel"
+        "alt": "Vercel"
     },
     {
         "link": "/images/logos/mongodb1_logo.png",
-        "alt": "mongodb"
+        "alt": "MongoDB Atlas"
     },
     {
         "link": "/images/logos/firebase_logo.png",
-        "alt": "firebase"
+        "alt": "Firebase"
     },
     {
         "link": "/images/logos/html_logo.png",
-        "alt": "html5"
+        "alt": "HTML"
     },
     {
         "link": "/images/logos/expo_logo1.png",
-        "alt": "expo"
+        "alt": "Expo"
     },
     {
         "link": "/images/logos/ec2_logo.png",
-        "alt": "aws ec2"
+        "alt": "AWS EC2"
     }
 ]

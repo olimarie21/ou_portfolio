@@ -12,12 +12,11 @@
         ],
         "tech": [
             "React Native",
+            "JavaScript",
             "Expo",
             "Firebase Authentication",
             "Google Auth",
-            "GraphQL Apollo",
-            "Next.js",
-            "Vercel"
+            "GraphQL"
         ]
     },
     {
@@ -32,12 +31,13 @@
             "As a full-stack developer for this project I integrated user authentication with Firebase Auth, Google OAuth provider, and server-side JWT token validation with Firebase Admin. I configured our primary GraphQL schema along with our Apollo Server, integrating it with Mongoose schema to connect to our primary database, MongoDB Atlas."
         ],
         "tech": [
-            "Express,js",
+            "Express.js",
             "Node.js",
+            "JavaScript",
             "MongoDB Atlas",
             "Firebase Admin",
             "Mongoose",
-            "GraphQL Apollo",
+            "GraphQL",
             "AWS EC2"
         ]
     },
@@ -54,6 +54,7 @@
         "tech": [
             "Next.js",
             "Styled Components",
+            "CSS",
             "Vercel"
         ]
     },
@@ -70,6 +71,7 @@
         ],
         "tech": [
             "React.js",
+            "JavaScript",
             "REST APIs",
             "Express.js",
             "Mongoose",
