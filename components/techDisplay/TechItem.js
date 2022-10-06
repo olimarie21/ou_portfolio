@@ -3,11 +3,11 @@ import styled from 'styled-components'
 import { globalColor } from '../../styles/Styles'
 
 const TechItem = (props) => {
-	const { icon, alt } = props
+	const { icon, alt, onClick } = props
 
 	return (
 		<Container>
-			<ImgContainer>
+			<ImgContainer onClick={onClick}>
 				<Image
 					src={icon}
 					layout='fill'
