@@ -95,6 +95,11 @@ const DescContainer = styled.div`
 			border-radius: 18px;
 			margin-bottom: 12%;
 			cursor: pointer;
+
+			:hover {
+				background: ${globalColor.primaryLight};
+				color: ${globalColor.darkText};
+			}
 		}
 	}
 
@@ -102,13 +107,14 @@ const DescContainer = styled.div`
 		transition: 0.5s ease-in-out;
 		height: 100%;
 		border-radius: 90px 90px 40px 40px;
+		backface-visibility: hidden;
 		padding: 0 12%;
-		// border: 0.5px solid ${globalColor.primary};
 
 		.projectDetailDisplay {
 			display: flex;
 			flex-direction: column;
 			margin-top: 10%;
+			backface-visibility: hidden;
 
 			H4 {
 				margin-bottom: 8px;
