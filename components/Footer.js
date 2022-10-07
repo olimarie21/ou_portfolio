@@ -1,10 +1,14 @@
 import styled from 'styled-components'
 import { globalColor, H4_light, font } from '../styles/Styles'
+import SocialNav from './header/SocialNav'
 
 const Footer = () => {
 	return (
 		<Container>
-			<H4_light className={'text'}>Get in touch</H4_light>
+			<H4_light className={'text'}>
+				Get in touch
+				<SocialNav />
+			</H4_light>
 		</Container>
 	)
 }
@@ -23,5 +27,15 @@ const Container = styled.div`
 		position: absolute;
 		top: 60%;
 		left: 10vw;
+		display: flex;
+		align-items: center;
+		gap: 16px;
+
+		ul {
+			gap: 16px;
+			li {
+				color: ${globalColor.lightText};
+			}
+		}
 	}
 `
