@@ -20,6 +20,13 @@ const LandingPage = () => {
 		console.log(techSelection)
 	}
 
+	const clearFilter = () => {
+		setTech(null)
+		setProjects(projects)
+		setTechItemSelected(false)
+		console.log('filter cleared')
+	}
+
 	useEffect(() => {
 		const updateProjects = () => {
 			if (techSelection != null) {
@@ -37,6 +44,7 @@ const LandingPage = () => {
 				techItemSelected={techItemSelected}
 				setProjects={setProjects}
 				projects={projectDisplay}
+				clearFilter={clearFilter}
 			/>
 			<TechContainer icons={icons} onClick={setTechSelection} />
 		</>
