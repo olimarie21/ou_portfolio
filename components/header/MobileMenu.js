@@ -1,7 +1,8 @@
-import Image from 'next/image'
 import styled from 'styled-components'
-import { globalColor, H1, font } from '../../styles/Styles'
-import SocialNav from './SocialNav'
+import { globalColor, font } from '../../styles/Styles'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import EmailIcon from '@mui/icons-material/Email'
 
 const MobileMenu = () => {
 	return (
@@ -16,30 +17,13 @@ const MobileMenu = () => {
 			</MainMenu>
 			<SocialIcons>
 				<ListItem>
-					<Image
-						src={'/images/Vectoremail.svg'}
-						height={40}
-						width={40}
-						alt='LinkedIn Logo'
-					/>
+					<EmailIcon />
 				</ListItem>
 				<ListItem>
-					<Image
-						src={'/images/Github-Mark.svg'}
-						height={40}
-						width={40}
-						alt='LinkedIn Logo'
-					/>
+					<GitHubIcon />
 				</ListItem>
 				<ListItem>
-					<div className='linkedIn'>
-						<Image
-							src={'/images/linkedin.svg'}
-							height={40}
-							width={40}
-							alt='LinkedIn Logo'
-						/>
-					</div>
+					<LinkedInIcon />
 				</ListItem>
 			</SocialIcons>
 		</Container>
@@ -101,12 +85,5 @@ const ListItem = styled.li`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	.linkedIn {
-		background-color: ${globalColor.primary};
-		border-radius: 8px;
-		height: 40px;
-		width: 40px;
-	}
 `
 export default MobileMenu

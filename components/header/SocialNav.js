@@ -1,35 +1,20 @@
-import Image from 'next/image'
 import styled from 'styled-components'
 import { globalColor, H1, font } from '../../styles/Styles'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import EmailIcon from '@mui/icons-material/Email'
 
 const SocialNav = () => {
 	return (
 		<SocialIcons>
 			<ListItem>
-				<Image
-					src={'/images/Vectoremail.svg'}
-					height={20}
-					width={20}
-					alt='LinkedIn Logo'
-				/>
+				<EmailIcon />
 			</ListItem>
 			<ListItem>
-				<Image
-					src={'/images/Github-Mark.svg'}
-					height={20}
-					width={20}
-					alt='LinkedIn Logo'
-				/>
+				<GitHubIcon />
 			</ListItem>
 			<ListItem>
-				<div className='linkedIn'>
-					<Image
-						src={'/images/linkedin.svg'}
-						height={20}
-						width={20}
-						alt='LinkedIn Logo'
-					/>
-				</div>
+				<LinkedInIcon />
 			</ListItem>
 		</SocialIcons>
 	)
@@ -54,13 +39,6 @@ const ListItem = styled.li`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	.linkedIn {
-		background-color: ${globalColor.primary};
-		border-radius: 8px;
-		height: 20px;
-		width: 20px;
-	}
 `
 
 export default SocialNav
