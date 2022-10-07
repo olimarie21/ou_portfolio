@@ -7,12 +7,7 @@ import icons from '../text/icons.json'
 const LandingPage = () => {
 	const [projectDisplay, setProjects] = useState(projects)
 	const [techSelection, setTech] = useState(null)
-	const [domLoaded, setDomLoaded] = useState(false)
 	const [techItemSelected, setTechItemSelected] = useState(false)
-
-	useEffect(() => {
-		setDomLoaded(true)
-	}, [])
 
 	const setTechSelection = (tech) => {
 		setTech(tech)
@@ -29,10 +24,19 @@ const LandingPage = () => {
 
 	useEffect(() => {
 		const updateProjects = () => {
-			if (techSelection != null) {
+			if (techSelection === 'Firebase') {
+				const regex = new RegExp('Firebase (Firestore|Auth|Admin)', 'g')
+
+				setProjects(projects.filter((project) => regex.test(project.tech)))
+				return
+			}
+
+			if (techSelection != null && techSelection != 'Firebase') {
 				setProjects(
 					projects.filter((project) => project.tech.includes(techSelection))
 				)
+
+				return
 			}
 		}
 		updateProjects()
