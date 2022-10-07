@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
-import { Navigation } from 'swiper'
+import { Navigation, Pagination } from 'swiper'
 import TechItem from './TechItem'
 import { H2, pageMargin } from '../../styles/Styles'
 import 'swiper/css'
@@ -17,15 +17,15 @@ const TechContainer = (props) => {
 
 	return (
 		<Container>
-			<H2 className='projectHeader'>Tech Filter</H2>
+			<H2 className='projectHeader'>Filter By Tech</H2>
 			<List>
 				{domLoaded && (
 					<Swiper
 						slidesPerView={'auto'}
 						spaceBetween={36}
-						centeredSlides={true}
 						loop={true}
-						modules={[Navigation]}>
+						loopedSlides={10}
+						modules={[Pagination]}>
 						{icons.map((icon, i) => (
 							<SwiperSlide key={i}>
 								<TechItem
@@ -47,6 +47,7 @@ const Container = styled.div`
 		font-size: 12px;
 		font-weight: 500;
 	}
+
 	.projectHeader {
 		margin: ${pageMargin};
 		text-align: left;
@@ -60,12 +61,16 @@ const List = styled.div`
 		overflow: hidden;
 	}
 
+	margin: 0 0 0 10%;
+	.swiper-wrapper {
+	}
 	.swiper-slide {
 		display: flex;
 		flex-shrink: 1;
 		justify-content: center;
 		align-items: center;
 		height: 7rem;
+		margin: 0;
 	}
 
 	display: flex;
