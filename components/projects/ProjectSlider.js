@@ -30,12 +30,10 @@ const ProjectSlider = (props) => {
 						slidesPerView: 4.5,
 					},
 				}}
+				stopOnLastSlide={true}
 				spaceBetween={36}
 				freeMode={true}
-				// pagination={{
-				// 	clickable: true,
-				// }}
-				modules={[FreeMode, Pagination]}>
+				modules={[FreeMode]}>
 				{projects.map((project, i) => (
 					<SwiperSlide key={i}>
 						<ProjectItem
