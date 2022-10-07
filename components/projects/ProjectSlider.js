@@ -1,21 +1,27 @@
 import styled from 'styled-components'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
-import { Navigation } from 'swiper'
+import 'swiper/css/pagination'
+import { FreeMode, Pagination } from 'swiper'
 import ProjectItem from './ProjectItem'
-import { globalColor, H2, pageMargin } from '../../styles/Styles'
+import { font, globalColor, H2, pageMargin } from '../../styles/Styles'
+import FilterListOffIcon from '@mui/icons-material/FilterListOff'
 
 const ProjectSlider = (props) => {
-	const { projects, setProjects, techItemSelected } = props
+	const { projects, setProjects, techItemSelected, clearFilter } = props
 
 	return (
 		<Container>
 			<H2 className='projectHeader'>
-				Projects {techItemSelected ? <button>clear filter</button> : null}
+				Projects{' '}
+				{techItemSelected ? (
+					<BtnClearFilter onClick={clearFilter}>
+						<FilterListOffIcon />
+					</BtnClearFilter>
+				) : null}
 			</H2>
 			<Swiper
 				slidesPerView={1}
-				slidesOffsetBefore={'30%'}
 				breakpoints={{
 					450: {
 						slidesPerView: 'auto',
@@ -25,9 +31,11 @@ const ProjectSlider = (props) => {
 					},
 				}}
 				spaceBetween={36}
-				centeredSlides={true}
-				// loop={true}
-				modules={[Navigation]}>
+				freeMode={true}
+				// pagination={{
+				// 	clickable: true,
+				// }}
+				modules={[FreeMode, Pagination]}>
 				{projects.map((project, i) => (
 					<SwiperSlide key={i}>
 						<ProjectItem
@@ -48,6 +56,10 @@ const Container = styled.div`
 		font-size: 12px;
 		font-weight: 500;
 	}
+
+	.swiper-wrapper {
+		margin: 0 10%;
+	}
 	.swiper {
 		overflow: hidden;
 		height: 420px;
@@ -62,6 +74,30 @@ const Container = styled.div`
 		text-align: left;
 		margin: ${pageMargin};
 		margin-top: 50px;
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+`
+
+const BtnClearFilter = styled.button`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: ${globalColor.primaryLight};
+	border: none;
+	color: ${globalColor.darkText};
+	width: 36px;
+	height: 36px;
+	border-radius: 100px;
+	font-family: ${font};
+	font-weight: 500;
+	line-height: 16px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+	:hover {
+		color: ${globalColor.lightText};
+		background: ${globalColor.primary};
 	}
 `
 
