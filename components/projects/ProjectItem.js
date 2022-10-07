@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styled from 'styled-components'
 import { globalColor, H2, H3, H4, Paragraph, font } from '../../styles/Styles'
+import GitHubIcon from '@mui/icons-material/GitHub'
 
 const ProjectItem = (props) => {
 	const { title, gitLink, shortDesc, tech } = props
@@ -21,12 +22,7 @@ const ProjectItem = (props) => {
 					<H3>{title}</H3>
 
 					<a href={gitLink}>
-						<Image
-							src={'/images/Github-Mark.svg'}
-							height={20}
-							width={20}
-							alt='Github Logo'
-						/>
+						<GitHubIcon />
 					</a>
 				</div>
 				<Paragraph>{shortDesc}</Paragraph>
@@ -137,6 +133,10 @@ const DescContainer = styled.div`
 		gap: 12px;
 		justify-content: start;
 		align-items: center;
+
+		a svg {
+			color: ${globalColor.primary};
+		}
 	}
 `
 
