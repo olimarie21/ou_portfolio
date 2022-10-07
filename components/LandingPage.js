@@ -12,7 +12,7 @@ const LandingPage = () => {
 	const setTechSelection = (tech) => {
 		setTech(tech)
 		setTechItemSelected(true)
-		console.log(techSelection)
+		console.log('tech selected')
 	}
 
 	const clearFilter = () => {

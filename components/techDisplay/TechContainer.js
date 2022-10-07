@@ -17,7 +17,7 @@ const TechContainer = (props) => {
 
 	return (
 		<Container>
-			<H2 className='projectHeader'>Filter By Tech</H2>
+			<H2 className='projectHeader'>Filter by Tech</H2>
 			<List>
 				{domLoaded && (
 					<Swiper
