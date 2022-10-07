@@ -7,23 +7,39 @@ import EmailIcon from '@mui/icons-material/Email'
 const MobileMenu = () => {
 	return (
 		<Container>
-			<MainMenu>
+			{/* Temporarily remove nav items */}
+			{/* <MainMenu>
 				<MainItem>
 					<a href='#'>Projects</a>
 				</MainItem>
 				<MainItem>
 					<a href='#'>About</a>
 				</MainItem>
-			</MainMenu>
+			</MainMenu> */}
 			<SocialIcons>
 				<ListItem>
-					<EmailIcon />
+					<a
+						href='mailto:olivia.underdah@gmail.com'
+						target='_blank'
+						rel='noreferrer'>
+						<EmailIcon />
+					</a>
 				</ListItem>
 				<ListItem>
-					<GitHubIcon />
+					<a
+						href='https://github.com/olimarie21'
+						target='_blank'
+						rel='noreferrer'>
+						<GitHubIcon />
+					</a>
 				</ListItem>
 				<ListItem>
-					<LinkedInIcon />
+					<a
+						href='https://www.linkedin.com/in/oliviaunderdah/'
+						target='_blank'
+						rel='noreferrer'>
+						<LinkedInIcon />
+					</a>
 				</ListItem>
 			</SocialIcons>
 		</Container>
@@ -69,7 +85,8 @@ const MainItem = styled.li`
 
 const SocialIcons = styled.ul`
 	display: flex;
-	gap: 32px;
+	flex-direction: column;
+	gap: 62px;
 	margin: 0;
 	padding: 0;
 `
@@ -78,12 +95,21 @@ const ListItem = styled.li`
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	font-size: 16px;
+	// font-size: 16px;
 	font-family: ${font};
 	font-weight: 600;
 	color: ${globalColor.primary};
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	// display: flex;
+
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		svg {
+			height: 40px;
+			width: 40px;
+		}
+	}
 `
 export default MobileMenu

@@ -7,14 +7,15 @@ const MainNav = () => {
 	return (
 		<Nav>
 			<Container>
-				<MainMenu>
+				{/* Temporarily remove nav items */}
+				{/* <MainMenu>
 					<ListItem>
 						<a href='#'>Projects</a>
 					</ListItem>
 					<ListItem>
 						<a href='#'>About</a>
 					</ListItem>
-				</MainMenu>
+				</MainMenu> */}
 
 				<SocialNav />
 			</Container>
@@ -57,7 +58,7 @@ const Container = styled.nav`
 		align-items: start;
 		position: absolute;
 		top: 0;
-		right: 10vw;
+		right: 12vw;
 		padding-top: 8vh;
 	}
 `
@@ -82,6 +83,11 @@ const ListItem = styled.li`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	:hover {
+		font-weight: 600;
+		transform: scale(1.1);
+	}
 `
 
 export default MainNav
