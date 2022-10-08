@@ -2,16 +2,17 @@ import Image from 'next/image'
 import styled from 'styled-components'
 import { globalColor, H2, H3, H4, Paragraph, font } from '../../styles/Styles'
 import GitHubIcon from '@mui/icons-material/GitHub'
+import Link from 'next/link'
 
 const ProjectItem = (props) => {
-	const { title, gitLink, shortDesc, tech } = props
+	const { title, gitLink, shortDesc, tech, slug } = props
 
 	return (
 		<Container>
 			<BGImg>
 				<Image
 					src={'/images/picbeak_mobile_matchview.jpg'}
-					alt={'image'}
+					alt={`${title} image`}
 					layout='fill'
 					objectFit='cover'
 					quality={100}
@@ -31,9 +32,9 @@ const ProjectItem = (props) => {
 					<H4>Tech Stack</H4>
 					<p>{tech.join(', ')}</p>
 
-					<button onClick={() => console.log('click')}>
-						Ready to learn more?
-					</button>
+					<Link href={`/${slug}`}>
+						<div className='getDetailBtn'>Want to learn more?</div>
+					</Link>
 				</div>
 			</DescContainer>
 		</Container>
@@ -80,21 +81,27 @@ const DescContainer = styled.div`
 			color: ${globalColor.darkText};
 		}
 
-		button {
-			border: none;
+		.getDetailBtn {
 			background: ${globalColor.primary};
-			color: ${globalColor.lightText};
-			font-size: 14px;
-			font-weight: 600;
-			font-family: ${font};
 			height: 40px;
 			border-radius: 18px;
 			margin-bottom: 12%;
 			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: ${globalColor.lightText};
+			font-size: 14px;
+			font-weight: 600;
+			font-family: ${font};
+			text-align: center;
+
+			p {
+			}
 
 			:hover {
-				background: ${globalColor.primaryLight};
 				color: ${globalColor.darkText};
+				background: ${globalColor.primaryLight};
 			}
 		}
 	}
