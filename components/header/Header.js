@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { globalColor, H1, font } from '../../styles/Styles'
 import MainNav from './MainNav'
 import MobileMenu from './MobileMenu'
+import Link from 'next/link'
 
 const Header = () => {
 	const [showMenu, setShowMenu] = useState(false)
@@ -45,10 +46,12 @@ const Header = () => {
 				</svg>
 			</MobileIcon>
 			<TextContainer>
-				<Text>
-					<H1>Hi, I&apos;m Olivia.</H1>
-					<Headline>full-stack developer</Headline>
-				</Text>
+				<Link href={'/'}>
+					<Text>
+						<H1>Hi, I&apos;m Olivia.</H1>
+						<Headline>full-stack developer</Headline>
+					</Text>
+				</Link>
 			</TextContainer>
 			{showMenu ? <MobileMenu /> : null}
 		</Heading>
@@ -133,6 +136,7 @@ const TextContainer = styled.div`
 	width: 300px;
 	min-width: 300px;
 	min-height: 156px;
+	cursor: pointer;
 
 	@media screen and (min-width: 750px) {
 		background: url('/images/primary_bg.svg') no-repeat;
