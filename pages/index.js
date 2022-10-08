@@ -3,8 +3,6 @@ import styled from 'styled-components'
 import Footer from '../components/Footer'
 import Header from '../components/header/Header'
 import LandingPage from '../components/LandingPage'
-import ProjectSlider from '../components/projects/ProjectSlider'
-import TechContainer from '../components/techDisplay/TechContainer'
 
 export default function Home() {
 	return (
