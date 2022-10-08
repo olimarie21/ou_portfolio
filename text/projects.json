@@ -1,6 +1,8 @@
 [
     {
         "image": "",
+        "slug": "courte",
+        "category": "Mobile Application",
         "title": "Courte",
         "gitLink": "https://github.com/Gavriil84/Team-SpaceDuck-Frontend",
         "siteLink": "https://www.courte.app",
@@ -21,6 +23,8 @@
     },
     {
         "image": "",
+        "slug": "courte-server",
+        "category": "Node.js Server",
         "title": "Courte Server",
         "gitLink": "https://github.com/Gavriil84/Team-SpaceDuck-Backend",
         "siteLink": "https://www.courte.app",
@@ -43,6 +47,8 @@
     },
     {
         "image": "",
+        "slug": "courte-marketing",
+        "category": "Next.js Website",
         "title": "www.courte.app",
         "gitLink": "https://github.com/olimarie21/Courte-landing-page",
         "siteLink": "https://www.courte.app",
@@ -60,6 +66,8 @@
     },
     {
         "image": "",
+        "slug": "picbeak",
+        "category": "Full-stack Web App",
         "title": "Picbeak",
         "gitLink": "https://github.com/ijaspreetbhatti/Team-Loon-Picbeak-Frontend",
         "siteLink": "https://www.picbeak.com/",
@@ -84,6 +92,8 @@
     },
     {
         "image": "",
+        "slug": "scave",
+        "category": "Progressive Web App",
         "title": "Scave",
         "gitLink": "https://github.com/ijaspreetbhatti/Team-Magpie-Scave",
         "siteLink": null,
@@ -107,6 +117,8 @@
     },
     {
         "image": "",
+        "slug": "wp-theme",
+        "category": "Custom Wordpress Theme",
         "title": "Wordpress Theme",
         "gitLink": "https://github.com/olimarie21/portfolio",
         "siteLink": null,
