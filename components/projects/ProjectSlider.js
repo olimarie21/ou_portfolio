@@ -30,7 +30,7 @@ const ProjectSlider = (props) => {
 						slidesPerView: 4.5,
 					},
 				}}
-				stopOnLastSlide={true}
+				// stopOnLastSlide={true}
 				spaceBetween={36}
 				freeMode={true}
 				modules={[FreeMode]}>
@@ -41,6 +41,7 @@ const ProjectSlider = (props) => {
 							gitLink={project.gitLink}
 							shortDesc={project.shortDesc}
 							tech={project.tech}
+							slug={project.slug}
 						/>
 					</SwiperSlide>
 				))}
