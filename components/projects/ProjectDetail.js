@@ -12,7 +12,6 @@ import Image from 'next/image'
 import projects from '../../text/projects.json'
 
 const ProjectDetail = ({ project }) => {
-	console.log(project)
 	return (
 		<Container>
 			<div className='textContainer'>
@@ -28,7 +27,7 @@ const ProjectDetail = ({ project }) => {
 
 				<div className='imgContainerMobile'>
 					<Image
-						src={'/images/picbeak_mobile_matchview.jpg'}
+						src={project.image.length > 1 ? project.image[1] : project.image[0]}
 						alt={'image'}
 						layout='fill'
 						objectFit='cover'
@@ -52,15 +51,6 @@ const ProjectDetail = ({ project }) => {
 					))}
 				</AboutSection>
 			</div>
-			<div className='imgContainerDesktop'>
-				<Image
-					src={'/images/picbeak_mobile_matchview.jpg'}
-					alt={'image'}
-					layout='fill'
-					objectFit='cover'
-					quality={100}
-				/>
-			</div>
 		</Container>
 	)
 }
@@ -75,39 +65,17 @@ export async function getStaticProps({ params }) {
 	}
 }
 
-const marginRight = '10vw'
-
 const Container = styled.div`
-	display: flex;
 	position: relative;
 	margin-top: 5%;
-	margin-bottom: 5%;
-
-	@media screen and (min-width: 600px) {
-		flex-direction: row;
-	}
-
-	.imgContainerDesktop {
-		display: none;
-
-		@media screen and (min-width: 600px) {
-			display: block;
-			width: 60%;
-			height: 30rem;
-			position: relative;
-			top: 0;
-			left: 0;
-			border-radius: 40px 0px 0px 40px;
-			overflow: hidden;
-		}
-	}
 
 	.textContainer {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-rows: auto auto auto auto;
+		grid-template-columns: 55% 45%;
 
-		@media screen and (min-width: 600px) {
-			width: 60%;
+		@media screen and (min-width: 1200px) {
+			grid-template-columns: 45% 55%;
 		}
 
 		h4 {
@@ -119,17 +87,25 @@ const Container = styled.div`
 		}
 
 		.imgContainerMobile {
-			width: 100%;
+			grid-column: span 2;
 			height: 16rem;
 			position: relative;
 			top: 0;
 			left: 0;
-			border-radius: 40px 0px 0px 40px;
-			margin-left: 10%;
+			border-radius: 0px 40px 40px 0px;
+			margin-right: 10%;
 			overflow: hidden;
 
 			@media screen and (min-width: 600px) {
-				display: none;
+				height: 20rem;
+			}
+
+			@media screen and (min-width: 900px) {
+				grid-column: 2 / 3;
+				grid-row: span 4;
+				margin-right: 0;
+				height: 30rem;
+				border-radius: 40px 0px 0px 40px;
 			}
 		}
 	}
@@ -140,8 +116,13 @@ const HeaderContainer = styled.div`
 	flex-direction: column;
 	align-items: start;
 	margin: ${pageMargin};
-	margin-right: ${marginRight};
 	margin-bottom: 4%;
+	grid-column: span 2;
+
+	@media screen and (min-width: 900px) {
+		margin-right: 5%;
+		grid-column: span 1;
+	}
 
 	.titleContainer {
 		display: flex;
@@ -150,6 +131,10 @@ const HeaderContainer = styled.div`
 
 		a svg {
 			color: ${globalColor.darkText};
+
+			:hover {
+				transform: scale(1.1);
+			}
 		}
 	}
 `
@@ -160,13 +145,22 @@ const TechStack = styled.div`
 	margin: ${pageMargin};
 	margin-top: 4%;
 	margin-bottom: 4%;
+	grid-column: span 2;
 
-	@media screen and (min-width: 600px) {
+	@media screen and (min-width: 900px) {
+		margin-right: 5%;
+		grid-column: span 1;
 		margin-top: 0;
 	}
 `
 
 const AboutSection = styled.div`
+	grid-column: span 2;
 	margin: ${pageMargin};
+
+	@media screen and (min-width: 900px) {
+		grid-column: span 1;
+		margin-right: 5%;
+	}
 `
 export default ProjectDetail
