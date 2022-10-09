@@ -5,13 +5,13 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import Link from 'next/link'
 
 const ProjectItem = (props) => {
-	const { title, gitLink, shortDesc, tech, slug } = props
+	const { title, gitLink, shortDesc, tech, slug, imgSrc } = props
 
 	return (
 		<Container>
 			<BGImg>
 				<Image
-					src={'/images/picbeak_mobile_matchview.jpg'}
+					src={imgSrc[0]}
 					alt={`${title} image`}
 					layout='fill'
 					objectFit='cover'
@@ -85,7 +85,7 @@ const DescContainer = styled.div`
 			background: ${globalColor.primary};
 			height: 40px;
 			border-radius: 18px;
-			margin-bottom: 12%;
+			margin-bottom: 10%;
 			cursor: pointer;
 			display: flex;
 			justify-content: center;
@@ -125,7 +125,7 @@ const DescContainer = styled.div`
 			}
 
 			p {
-				margin: 0 0 12% 0;
+				margin: 0 0 10% 0;
 				padding: 0;
 			}
 		}

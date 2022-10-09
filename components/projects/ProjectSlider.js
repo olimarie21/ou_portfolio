@@ -42,6 +42,7 @@ const ProjectSlider = (props) => {
 							shortDesc={project.shortDesc}
 							tech={project.tech}
 							slug={project.slug}
+							imgSrc={project.image}
 						/>
 					</SwiperSlide>
 				))}
