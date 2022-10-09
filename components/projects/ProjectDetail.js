@@ -111,7 +111,7 @@ const Container = styled.div`
 				grid-column: 2 / 3;
 				grid-row: span 4;
 				margin-right: 0;
-				height: 30rem;
+				height: 34rem;
 				border-radius: 40px 0px 0px 40px;
 			}
 		}
