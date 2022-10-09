@@ -5,6 +5,7 @@ Designed & developed by [@olimarie21](https://github.com/olimarie21)
 - Next.js
 - Styled Components
 - Swiper.js Library
+- Material Icons
 
 ## Run locally:
 
