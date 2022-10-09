@@ -60,8 +60,8 @@ export const H4_light = styled.h4`
 
 export const Paragraph = styled.p`
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 18px;
+	font-size: 15px;
+	line-height: 21px;
 	color: ${globalColor.darkText};
 	font-family: ${font};
 	margin: 0;
