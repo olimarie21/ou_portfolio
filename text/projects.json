@@ -31,7 +31,7 @@
         "category": "Node.js Server",
         "title": "Courte Server",
         "gitLink": "https://github.com/Gavriil84/Team-SpaceDuck-Backend",
-        "siteLink": "https://www.courte.app",
+        "siteLink": null,
         "shortDesc": "AWS EC2 hosted server running on Node.js with Express and Graphql.",
         "longDesc": [
             "Courte is a mobile application that offers a comprehensive solution to facilitate the use and sharing of public tennis courts by enabling users to find the closest parks with available courts, manage queues and connect with nearby users to play together.",
@@ -51,7 +51,8 @@
     },
     {
         "image": [
-            "https://res.cloudinary.com/scave2021/image/upload/v1665342644/portfolio/courte_mobile_mvym7m.png"
+            "https://res.cloudinary.com/scave2021/image/upload/v1665347652/portfolio/courte_marketing_mobile_w7kvwg.png",
+            "https://res.cloudinary.com/scave2021/image/upload/v1665347497/portfolio/courte_marketing_desktop_srpxcp.png"
         ],
         "slug": "courte-marketing",
         "category": "Next.js Website",

@@ -17,8 +17,15 @@ const ProjectDetail = ({ project }) => {
 			<div className='textContainer'>
 				<HeaderContainer>
 					<div className='titleContainer'>
-						<H2>{project.title}</H2>
-						<a href={project.gitLink}>
+						{project.siteLink != null ? (
+							<a href={project.siteLink} target='_blank' rel='noreferrer'>
+								<H2>{project.title}</H2>
+							</a>
+						) : (
+							<H2>{project.title}</H2>
+						)}
+
+						<a href={project.gitLink} target='_blank' rel='noreferrer'>
 							<GitHubIcon />
 						</a>
 					</div>
@@ -129,10 +136,15 @@ const HeaderContainer = styled.div`
 		align-items: center;
 		gap: 8px;
 
+		a h2:hover {
+			color: ${globalColor.primary};
+		}
+
 		a svg {
 			color: ${globalColor.darkText};
 
 			:hover {
+				color: ${globalColor.primary};
 				transform: scale(1.1);
 			}
 		}
