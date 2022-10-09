@@ -17,7 +17,7 @@ export const H1 = styled.h1`
 	margin: 0;
 	padding: 0;
 	font-family: ${font};
-	font-size: 28px;
+	font-size: 30px;
 	line-height: 32px;
 
 	@media screen and (min-width: 700px) {
@@ -27,7 +27,7 @@ export const H1 = styled.h1`
 
 export const H2 = styled.h2`
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 26px;
 	color: ${globalColor.darkText};
 	font-family: ${font};
 	margin: 0;
@@ -35,7 +35,7 @@ export const H2 = styled.h2`
 
 export const H3 = styled.h3`
 	font-weight: 800;
-	font-size: 20px;
+	font-size: 22px;
 	line-height: 30px;
 	color: ${globalColor.primary};
 	font-family: ${font};
@@ -44,7 +44,7 @@ export const H3 = styled.h3`
 
 export const H4 = styled.h4`
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 18px;
 	color: ${globalColor.darkText};
 	font-family: ${font};
 	margin: 0;
@@ -52,7 +52,7 @@ export const H4 = styled.h4`
 
 export const H4_light = styled.h4`
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 18px;
 	color: ${globalColor.lightText};
 	font-family: ${font};
 	margin: 0;
@@ -60,7 +60,7 @@ export const H4_light = styled.h4`
 
 export const Paragraph = styled.p`
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 18px;
 	color: ${globalColor.darkText};
 	font-family: ${font};
