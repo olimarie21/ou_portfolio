@@ -1,6 +1,8 @@
 [
     {
-        "image": "",
+        "image": [
+            "https://res.cloudinary.com/scave2021/image/upload/v1665343107/portfolio/courte_display_image_desktop_duwboa.png"
+        ],
         "slug": "courte",
         "category": "Mobile Application",
         "title": "Courte",
@@ -22,7 +24,9 @@
         ]
     },
     {
-        "image": "",
+        "image": [
+            "https://res.cloudinary.com/scave2021/image/upload/v1665342644/portfolio/courte_mobile_mvym7m.png"
+        ],
         "slug": "courte-server",
         "category": "Node.js Server",
         "title": "Courte Server",
@@ -46,7 +50,9 @@
         ]
     },
     {
-        "image": "",
+        "image": [
+            "https://res.cloudinary.com/scave2021/image/upload/v1665342644/portfolio/courte_mobile_mvym7m.png"
+        ],
         "slug": "courte-marketing",
         "category": "Next.js Website",
         "title": "www.courte.app",
@@ -65,7 +71,10 @@
         ]
     },
     {
-        "image": "",
+        "image": [
+            "https://res.cloudinary.com/scave2021/image/upload/v1665343119/portfolio/picbeak_mobile_matchview_tfeejy.jpg",
+            "https://res.cloudinary.com/scave2021/image/upload/v1665344226/portfolio/picbeak_display_image_desktop_nklodn.jpg"
+        ],
         "slug": "picbeak",
         "category": "Full-stack Web App",
         "title": "Picbeak",
@@ -91,7 +100,10 @@
         ]
     },
     {
-        "image": "",
+        "image": [
+            "https://res.cloudinary.com/scave2021/image/upload/v1665343762/portfolio/scave_display_image_mobile_fzuum7.jpg",
+            "https://res.cloudinary.com/scave2021/image/upload/v1665343657/portfolio/scave_display_image_v2_uhxzhk.jpg"
+        ],
         "slug": "scave",
         "category": "Progressive Web App",
         "title": "Scave",
@@ -116,7 +128,10 @@
         ]
     },
     {
-        "image": "",
+        "image": [
+            "https://res.cloudinary.com/scave2021/image/upload/v1665343507/portfolio/portfolio_mobile_i8kwpq.png",
+            "https://res.cloudinary.com/scave2021/image/upload/v1665343657/portfolio/portfolio_desktop_k019xy.jpg"
+        ],
         "slug": "wp-theme",
         "category": "Custom Wordpress Theme",
         "title": "Wordpress Theme",
