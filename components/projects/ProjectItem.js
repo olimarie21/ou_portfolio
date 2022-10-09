@@ -33,7 +33,7 @@ const ProjectItem = (props) => {
 					<p>{tech.join(', ')}</p>
 
 					<Link href={`/${slug}`}>
-						<div className='getDetailBtn'>Want to learn more?</div>
+						<div className='getDetailBtn'>Learn more</div>
 					</Link>
 				</div>
 			</DescContainer>
@@ -44,7 +44,7 @@ const ProjectItem = (props) => {
 const Container = styled.div`
 	display: flex;
 	height: 342px;
-	min-width: 316px;
+	min-width: 336px;
 	position: relative;
 	margin: 0;
 	border-radius: 90px;
