@@ -81,7 +81,7 @@
         "title": "Picbeak",
         "gitLink": "https://github.com/ijaspreetbhatti/Team-Loon-Picbeak-Frontend",
         "siteLink": "https://www.picbeak.com/",
-        "shortDesc": "A web application that provides educational information about bird species.",
+        "shortDesc": "Web app that provides educational information about bird species.",
         "longDesc": [
             "www.picbeak.com is a youth-focused web application that provides educational information about region specific bird species. Users can identify birds they spot in the wild and add them to their personal virtual Beakpedia collection to track their progress and unlock new features.",
             "In just 12 weeks, this project was created from concept to launch. During this project I served as both Project Manager and Front-End Developer.",
@@ -110,7 +110,7 @@
         "title": "Scave",
         "gitLink": "https://github.com/ijaspreetbhatti/Team-Magpie-Scave",
         "siteLink": null,
-        "shortDesc": "Scave is a location-based web app that facilitates the donation of goods.",
+        "shortDesc": "Location-based web app that facilitates the donation of goods.",
         "longDesc": [
             "Scave is a location-based progressive web application that utilizes Google Maps JavaScript API along with geo-location services and Firebase Firestore to facilitate the donation and pick-up of goods within communities. Users create an account and post items for donation and/or explore items in their area to pick up and claim.",
             "As a developer on this project I implemented the Google Maps JavaScript API along with customized Markers to display real-time user generated data and integrated Algolia search with front-end interace to allow for typo-tolerant searches on Firebase data. Additionally, I built the 'List Item' form utilizing HTML, CSS, and JavaScript, sending data to Firebase to be displayed on the map interface.",
