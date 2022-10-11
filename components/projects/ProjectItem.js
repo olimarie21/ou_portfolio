@@ -18,7 +18,7 @@ const ProjectItem = (props) => {
 					quality={100}
 				/>
 			</BGImg>
-			<DescContainer>
+			<DescContainer className='descContainer'>
 				<div className='titleContainer'>
 					<H3>{title}</H3>
 
@@ -32,7 +32,7 @@ const ProjectItem = (props) => {
 					<H4>Tech Stack</H4>
 					<p>{tech.join(', ')}</p>
 
-					<Link href={`/${slug}`}>
+					<Link href={`/${slug}`} className='getDetails'>
 						<div className='getDetailBtn'>Learn more</div>
 					</Link>
 				</div>
@@ -43,8 +43,8 @@ const ProjectItem = (props) => {
 
 const Container = styled.div`
 	display: flex;
-	height: 342px;
-	min-width: 330px;
+	height: 392px;
+	width: 330px;
 	position: relative;
 	margin: 0;
 	border-radius: 90px;
@@ -67,25 +67,24 @@ const DescContainer = styled.div`
 	border-radius: 40px;
 	position: absolute;
 	bottom: 0;
-	padding: 12px 24px;
+	padding: 4% 8%;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	cursor: pointer;
 
 	.projectDetailDisplay {
-		display: none;
-
-		p {
-			font-size: 12px;
-			font-weight: 400;
-			font-family: ${font};
-			color: ${globalColor.darkText};
+		h4 {
+			display: none;
 		}
-
+		p {
+			display: none;
+		}
 		.getDetailBtn {
+			margin-bottom: 1%;
+			margin-top: 4%;
 			background: ${globalColor.primary};
 			height: 40px;
+			width: 160px;
 			border-radius: 18px;
-			margin-bottom: 10%;
 			cursor: pointer;
 			display: flex;
 			justify-content: center;
@@ -95,43 +94,61 @@ const DescContainer = styled.div`
 			font-weight: 600;
 			font-family: ${font};
 			text-align: center;
-
-			p {
-			}
-
+			line-height: 13px;
 			:hover {
 				color: ${globalColor.darkText};
 				background: ${globalColor.primaryLight};
 			}
 		}
-	}
-
-	:hover {
-		transition: 0.5s ease-in-out;
-		height: 100%;
-		border-radius: 90px 90px 40px 40px;
-		backface-visibility: hidden;
-		padding: 0 12%;
-
-		.projectDetailDisplay {
-			display: flex;
-			flex-direction: column;
-			margin-top: 10%;
-			backface-visibility: hidden;
-
-			H4 {
-				margin-bottom: 8px;
-				padding: 0;
+		@media screen and (min-width: 450px) {
+			display: none;
+			p {
+				display: flex;
+				font-size: 12px;
+				font-weight: 400;
+				font-family: ${font};
+				color: ${globalColor.darkText};
 			}
 
-			p {
-				margin: 0 0 10% 0;
-				padding: 0;
+			h4 {
+				display: block;
+			}
+
+			.getDetailBtn {
+				margin-bottom: 10%;
+				margin-top: 0;
+				width: 100%;
 			}
 		}
+	}
 
-		.titleContainer {
-			margin-top: 62px;
+	@media screen and (min-width: 450px) {
+		:hover {
+			transition: 0.5s ease-in-out;
+			height: 100%;
+			border-radius: 90px 90px 40px 40px;
+			backface-visibility: hidden;
+			padding: 0 12%;
+
+			.projectDetailDisplay {
+				display: flex;
+				flex-direction: column;
+				margin-top: 10%;
+				backface-visibility: hidden;
+
+				H4 {
+					margin-bottom: 8px;
+					padding: 0;
+				}
+
+				p {
+					margin: 0 0 10% 0;
+					padding: 0;
+				}
+			}
+			.titleContainer {
+				margin-top: 62px;
+			}
 		}
 	}
 
