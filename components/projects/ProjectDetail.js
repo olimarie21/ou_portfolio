@@ -160,7 +160,7 @@ const TechStack = styled.div`
 	grid-column: span 2;
 
 	@media screen and (min-width: 900px) {
-		margin-right: 5%;
+		margin-right: 6%;
 		grid-column: span 1;
 		margin-top: 0;
 	}
@@ -172,7 +172,7 @@ const AboutSection = styled.div`
 
 	@media screen and (min-width: 900px) {
 		grid-column: span 1;
-		margin-right: 5%;
+		margin-right: 6%;
 	}
 `
 export default ProjectDetail
