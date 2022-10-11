@@ -30,6 +30,9 @@ const ProjectDetail = ({ project }) => {
 						</a>
 					</div>
 					<H4 className='categoryH4'>{project.category}</H4>
+					{project.proposal ? (
+						<button className='proposalBtn'>View proposal</button>
+					) : null}
 				</HeaderContainer>
 
 				<div className='imgContainerMobile'>
@@ -79,9 +82,9 @@ const Container = styled.div`
 	.textContainer {
 		display: grid;
 		grid-template-rows: auto auto auto auto;
-		grid-template-columns: 55% 45%;
+		grid-template-columns: 58% 42%;
 
-		@media screen and (min-width: 1200px) {
+		@media screen and (min-width: 1300px) {
 			grid-template-columns: 45% 55%;
 		}
 
@@ -107,11 +110,11 @@ const Container = styled.div`
 				height: 20rem;
 			}
 
-			@media screen and (min-width: 900px) {
+			@media screen and (min-width: 1100px) {
 				grid-column: 2 / 3;
 				grid-row: span 4;
 				margin-right: 0;
-				height: 34rem;
+				height: 100%;
 				border-radius: 40px 0px 0px 40px;
 			}
 		}
@@ -126,7 +129,25 @@ const HeaderContainer = styled.div`
 	margin-bottom: 4%;
 	grid-column: span 2;
 
-	@media screen and (min-width: 900px) {
+	.proposalBtn {
+		border: none;
+		font-weight: 500;
+		color: ${globalColor.darkText};
+		font-family: ${font};
+		background: ${globalColor.primaryLight};
+		border-radius: 12px;
+		padding: 8px;
+		margin-top: 2%;
+		box-shadow: 0px 3px 3px rgb(0 0 0 / 15%);
+		cursor: pointer;
+
+		:hover {
+			background: ${globalColor.primary};
+			color: ${globalColor.lightText};
+		}
+	}
+
+	@media screen and (min-width: 1100px) {
 		margin-right: 5%;
 		grid-column: span 1;
 	}
@@ -159,7 +180,7 @@ const TechStack = styled.div`
 	margin-bottom: 4%;
 	grid-column: span 2;
 
-	@media screen and (min-width: 900px) {
+	@media screen and (min-width: 1100px) {
 		margin-right: 6%;
 		grid-column: span 1;
 		margin-top: 0;
@@ -169,8 +190,9 @@ const TechStack = styled.div`
 const AboutSection = styled.div`
 	grid-column: span 2;
 	margin: ${pageMargin};
+	margin-bottom: 0;
 
-	@media screen and (min-width: 900px) {
+	@media screen and (min-width: 1100px) {
 		grid-column: span 1;
 		margin-right: 6%;
 	}
