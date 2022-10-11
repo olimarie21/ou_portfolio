@@ -44,7 +44,7 @@ const ProjectItem = (props) => {
 const Container = styled.div`
 	display: flex;
 	height: 342px;
-	min-width: 336px;
+	min-width: 330px;
 	position: relative;
 	margin: 0;
 	border-radius: 90px;

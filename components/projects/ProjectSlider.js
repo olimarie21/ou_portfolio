@@ -21,17 +21,19 @@ const ProjectSlider = (props) => {
 				) : null}
 			</H2>
 			<Swiper
-				slidesPerView={1}
+				slidesPerView={'auto'}
+				centeredSlides={true}
 				breakpoints={{
 					450: {
 						slidesPerView: 'auto',
+						centeredSlides: false,
 					},
 					1600: {
 						slidesPerView: 4.5,
+						centeredSlides: false,
 					},
 				}}
 				spaceBetween={44}
-				// freeMode={true}
 				modules={[FreeMode]}>
 				{projects.map((project, i) => (
 					<SwiperSlide key={i}>
@@ -57,7 +59,9 @@ const Container = styled.div`
 	}
 
 	.swiper-wrapper {
-		margin: 0 10%;
+		@media screen and (min-width: 450px) {
+			margin: 0 10%;
+		}
 	}
 	.swiper {
 		overflow: hidden;
