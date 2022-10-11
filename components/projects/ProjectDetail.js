@@ -143,9 +143,13 @@ const HeaderContainer = styled.div`
 		background: ${globalColor.primaryLight};
 		border-radius: 12px;
 		padding: 8px;
-		margin-top: 2%;
+		margin-top: 4%;
 		box-shadow: 0px 3px 3px rgb(0 0 0 / 15%);
 		cursor: pointer;
+
+		@media screen and (min-width: 900px) {
+			margin-top: 2%;
+		}
 
 		:hover {
 			background: ${globalColor.primary};
