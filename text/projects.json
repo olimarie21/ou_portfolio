@@ -8,11 +8,12 @@
         "title": "Courte",
         "gitLink": "https://github.com/Gavriil84/Team-SpaceDuck-Frontend",
         "siteLink": "https://www.courte.app",
+        "proposal": "https://drive.google.com/file/d/1iIIFzdxPnvRFKfv4vhqNsdGkDpmQ3PMv/view?usp=sharing",
         "shortDesc": "A mobile application that facilitates the use and sharing of tennis courts.",
         "longDesc": [
             "Courte is a mobile application that offers a comprehensive solution to facilitate the use and sharing of public tennis courts by enabling users to find the closest parks with available courts, manage queues and connect with nearby users to play together. Courte's front-end was built using React Native with Expo along with the Native Base component library. Courte utilizes the devices native features, including location and maps.",
-            "As a full-stack developer for this project I integrated user authentication with Firebase Auth and Google OAuth provider with the login flow. I integrated the Google Maps SDK with our application in order to display dynamic park data pulled from MongoDB via Graphql queries.",
-            "This project was created from concept to delivery in just 12 weeks, this would not have been possible without this talented team. Thank you to our UI/UX designer Bruna Weiss and to fellow developers Gabriel Watanabe, Jaspreet Bhatti, Mizuho Tohma and Yebin Cho for making Courte possible!"
+            "As a full-stack developer for this project I integrated user authentication with Firebase Authentication and Google OAuth provider with the login flow. I integrated the Google Maps SDK with our application in order to display dynamic park data pulled from MongoDB via GraphQL queries.",
+            "This project was created from concept to delivery in just 12 weeks, this would not have been possible without such a talented team. Thank you to our UI/UX designer Bruna Weiss and to fellow developers Gabriel Watanabe, Jaspreet Bhatti, Mizuho Tohma, Gustavo Monte and Yebin Cho for making Courte possible!"
         ],
         "tech": [
             "React Native",
@@ -32,11 +33,12 @@
         "title": "Courte Server",
         "gitLink": "https://github.com/Gavriil84/Team-SpaceDuck-Backend",
         "siteLink": null,
+        "proposal": "https://drive.google.com/file/d/1iIIFzdxPnvRFKfv4vhqNsdGkDpmQ3PMv/view?usp=sharing",
         "shortDesc": "AWS EC2 hosted server running on Node.js with Express and Graphql.",
         "longDesc": [
-            "Courte is a mobile application that offers a comprehensive solution to facilitate the use and sharing of public tennis courts by enabling users to find the closest parks with available courts, manage queues and connect with nearby users to play together.",
-            "Courte's server was built with Node.js, express.js and GraphQL apollo, and is hosted on an AWS EC2 instance.",
-            "As a full-stack developer for this project I integrated user authentication with Firebase Auth, Google OAuth provider, and server-side JWT token validation with Firebase Admin. I configured our primary GraphQL schema along with our Apollo Server, integrating it with Mongoose schema to connect to our primary database, MongoDB Atlas."
+            "Courte's server is running on Node.js with Express.js and GraphQL Apollo, it is hosted on an AWS EC2 instance. GraphQL was used in this project in order to allow all of our primary data to be accessed from a single endpoint, with requests that are scaled to our current need.",
+            "As a full-stack developer for this project I integrated user authentication with Firebase Auth, Google OAuth provider with our server side code, utilizing Firebase Admin to perform JWT token validation before users can access sensitive routes. By creating a middleware function that conditionally validates the JWT token passed to our Apollo Server in requests sent to our API we are able to create a user context within our server that can be checked before allowing access to specific data. Additionally, I configured our primary GraphQL schema along with our Apollo Server, integrating it with Mongoose schema to connect to our primary database, MongoDB Atlas.",
+            "Courte is a mobile application that offers a comprehensive solution to facilitate the use and sharing of public tennis courts by enabling users to find the closest parks with available courts, manage queues and connect with nearby users to play together."
         ],
         "tech": [
             "Express.js",
@@ -55,14 +57,15 @@
             "https://res.cloudinary.com/scave2021/image/upload/v1665347497/portfolio/courte_marketing_desktop_srpxcp.png"
         ],
         "slug": "courte-marketing",
-        "category": "Next.js Single Page Web App",
+        "category": "Single Page Web App",
         "title": "www.courte.app",
         "gitLink": "https://github.com/olimarie21/Courte-landing-page",
         "siteLink": "https://www.courte.app",
         "shortDesc": "A Next.js powered website hosted with Vercel.",
         "longDesc": [
-            "Courte is a mobile application that offers a comprehensive solution to facilitate the use and sharing of public tennis courts by enabling users to find the closest parks with available courts, manage queues and connect with nearby users to play together. Courte's landing page was built with Next.js and Styled Components. The site is hosted with Vercel.",
-            "Site UX/UI by Bruna Weiss."
+            "Courte is a mobile application that offers a comprehensive solution to facilitate the use and sharing of public tennis courts by enabling users to find the closest parks with available courts, manage queues and connect with nearby users to play together.",
+            "Courte's landing page was built with Next.js and Styled Components. Using Next.js allowed us to take advantage of server-side rendering, increasing site performance and decreasing page load time. By using Styled Components we could contain all component code and functionality within a single .js file.",
+            "The site is hosted with Vercel. Site UX/UI by Bruna Weiss."
         ],
         "tech": [
             "Next.js",
@@ -81,11 +84,13 @@
         "title": "Picbeak",
         "gitLink": "https://github.com/ijaspreetbhatti/Team-Loon-Picbeak-Frontend",
         "siteLink": "https://www.picbeak.com/",
+        "proposal": "https://drive.google.com/file/d/1u-QpnJxA9z1wvuIaDmmspRMkMjMJbXm-/view?usp=sharing",
         "shortDesc": "Web app that provides educational information about bird species.",
         "longDesc": [
             "www.picbeak.com is a youth-focused web application that provides educational information about region specific bird species. Users can identify birds they spot in the wild and add them to their personal virtual Beakpedia collection to track their progress and unlock new features.",
-            "In just 12 weeks, this project was created from concept to launch. During this project I served as both Project Manager and Front-End Developer.",
-            "As a front-end developer for this project, I developed stateful and streamlined front-end React functional components and interfaced with REST APIs via Axios requests to access and display dynamic data for users. I focused on the 'Identify' feature of the application and responsive header navigation. This was accomplished while collaborating with design and development team members in an Agile environment, going from concept to MVP in 13 weeks."
+            "Picbeak is a web application created using React, the site is hosted with Heroku. As a front-end developer, I developed stateful and streamlined front-end React functional components and interfaced with REST APIs via Axios requests to access and display dynamic data for users. I focused on the 'Identify' feature of the application and responsive header navigation.",
+            "Additionally, I worked to research and configure proper API endpoints to access the external data sources that were then formatted to store in our cloud database, MongoDB Atlas.",
+            "In just 12 weeks, this project was created from concept to launch. During this project I served as both Project Manager and Front-End Developer. Thank you to our UI/UX designer Bruna Weiss and to fellow developers Gabriel Watanabe, Jaspreet Bhatti, Mizuho Tohma, and Yebin Cho!"
         ],
         "tech": [
             "React.js",
@@ -112,9 +117,9 @@
         "siteLink": null,
         "shortDesc": "Location-based web app that facilitates the donation of goods.",
         "longDesc": [
-            "Scave is a location-based progressive web application that utilizes Google Maps JavaScript API along with geo-location services and Firebase Firestore to facilitate the donation and pick-up of goods within communities. Users create an account and post items for donation and/or explore items in their area to pick up and claim.",
+            "Scave is a location-based progressive web application that utilizes Google Maps JavaScript API along with geo-location services and Firebase Firestore to facilitate the donation and pick-up of goods within communities. Users can create an account and post items for donation and/or explore items in their area to pick up and claim.",
             "As a developer on this project I implemented the Google Maps JavaScript API along with customized Markers to display real-time user generated data and integrated Algolia search with front-end interace to allow for typo-tolerant searches on Firebase data. Additionally, I built the 'List Item' form utilizing HTML, CSS, and JavaScript, sending data to Firebase to be displayed on the map interface.",
-            "This project was created alongside a team of students at Langara College as part of the Web and Mobile App Design and Development Program (WMDD). During this project I served as both Project Manager and developer."
+            "In just 13 weeks, this project was created from concept to launch. During this project I served as both Project Manager and Developer. Thank you to our UI/UX designer Bruna Weiss and to fellow developers Gabriel Watanabe, Jaspreet Bhatti, Mizuho Tohma, and Yebin Cho!"
         ],
         "tech": [
             "JavaScript",
@@ -140,8 +145,8 @@
         "siteLink": null,
         "shortDesc": "A custom Wordpress theme developed using PHP and Sass.",
         "longDesc": [
-            "This site utilizes a custom WordPress theme that I designed and developed. The theme includes custom content loops on the front-page and as well as custom post data and post-type integration.",
-            "For preliminary wireframes and mock-ups I used Adobe Illustrator. For live implementation I used php, Sass and jQuery."
+            "This is a custom WordPress theme that I designed and developed. This theme is fully responsive and includes custom content loops on the front-page and as well as custom post data and post-type integration.",
+            "For preliminary wireframes and mock-ups I used Adobe Illustrator. For live implementation I used PHP, Sass and jQuery."
         ],
         "tech": [
             "jQuery",
