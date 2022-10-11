@@ -7,15 +7,16 @@ const MainNav = () => {
 	return (
 		<Nav>
 			<Container>
-				{/* Temporarily remove nav items */}
-				{/* <MainMenu>
+				<MainMenu>
 					<ListItem>
-						<a href='#'>Projects</a>
+						<a
+							href='https://drive.google.com/file/d/1jtUYGhjef5acnXHfefBx_mRlzOQUxIhl/view?usp=sharing'
+							target='_blank'
+							rel='noreferrer'>
+							Resume
+						</a>
 					</ListItem>
-					<ListItem>
-						<a href='#'>About</a>
-					</ListItem>
-				</MainMenu> */}
+				</MainMenu>
 
 				<SocialNav />
 			</Container>

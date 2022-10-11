@@ -3,19 +3,25 @@ import { globalColor, font } from '../../styles/Styles'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import EmailIcon from '@mui/icons-material/Email'
+import HomeRoundedIcon from '@mui/icons-material/HomeRounded'
+import { Link } from '@mui/material'
 
 const MobileMenu = () => {
 	return (
 		<Container>
-			{/* Temporarily remove nav items */}
-			{/* <MainMenu>
+			<Link href={'/'} className='homeIcon'>
+				<HomeRoundedIcon />
+			</Link>
+			<MainMenu>
 				<MainItem>
-					<a href='#'>Projects</a>
+					<a
+						href='https://drive.google.com/file/d/1jtUYGhjef5acnXHfefBx_mRlzOQUxIhl/view?usp=sharing'
+						target='_blank'
+						rel='noreferrer'>
+						Resume
+					</a>
 				</MainItem>
-				<MainItem>
-					<a href='#'>About</a>
-				</MainItem>
-			</MainMenu> */}
+			</MainMenu>
 			<SocialIcons>
 				<ListItem>
 					<a
@@ -59,6 +65,17 @@ const Container = styled.nav`
 	top: 0;
 	right: 0;
 	gap: 40px;
+
+	.homeIcon {
+		position: absolute;
+		top: 4.5vh;
+		left: 8vw;
+		svg {
+			color: ${globalColor.primary};
+			height: 40px;
+			width: 40px;
+		}
+	}
 `
 
 const MainMenu = styled.ul`
@@ -66,7 +83,7 @@ const MainMenu = styled.ul`
 	flex-direction: column;
 	gap: 32px;
 	align-items: center;
-	margin: 0;
+	margin: 0 0 4rem 0;
 	padding: 0;
 `
 
@@ -85,8 +102,7 @@ const MainItem = styled.li`
 
 const SocialIcons = styled.ul`
 	display: flex;
-	flex-direction: column;
-	gap: 62px;
+	gap: 56px;
 	margin: 0;
 	padding: 0;
 `
@@ -95,11 +111,9 @@ const ListItem = styled.li`
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	// font-size: 16px;
 	font-family: ${font};
 	font-weight: 600;
 	color: ${globalColor.primary};
-	// display: flex;
 
 	a {
 		display: flex;
@@ -109,6 +123,7 @@ const ListItem = styled.li`
 		svg {
 			height: 40px;
 			width: 40px;
+			color: ${globalColor.primary};
 		}
 	}
 `
