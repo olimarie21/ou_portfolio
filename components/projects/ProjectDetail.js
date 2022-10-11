@@ -31,7 +31,13 @@ const ProjectDetail = ({ project }) => {
 					</div>
 					<H4 className='categoryH4'>{project.category}</H4>
 					{project.proposal ? (
-						<button className='proposalBtn'>View proposal</button>
+						<a
+							href={project.proposal}
+							className='proposalBtn'
+							target='_blank'
+							rel='noreferrer'>
+							View proposal
+						</a>
 					) : null}
 				</HeaderContainer>
 
@@ -130,10 +136,10 @@ const HeaderContainer = styled.div`
 	grid-column: span 2;
 
 	.proposalBtn {
-		border: none;
 		font-weight: 500;
 		color: ${globalColor.darkText};
 		font-family: ${font};
+		font-size: 14px;
 		background: ${globalColor.primaryLight};
 		border-radius: 12px;
 		padding: 8px;
