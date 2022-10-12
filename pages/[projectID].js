@@ -11,7 +11,7 @@ export default function Project({ project }) {
 			<Head>
 				<title>Olivia Underdah</title>
 				<meta name='description' content='Full-stack developer' />
-				<link rel='icon' href='/favicon.ico' />
+				<link rel='icon' href='/favicon.png' />
 			</Head>
 			<Header />
 			<Main>
