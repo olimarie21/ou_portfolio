@@ -15,7 +15,7 @@ const MobileMenu = () => {
 			<MainMenu>
 				<MainItem>
 					<a
-						href='https://drive.google.com/file/d/1jtUYGhjef5acnXHfefBx_mRlzOQUxIhl/view?usp=sharing'
+						href='https://drive.google.com/file/d/1ByCPTMhKr1A4-4CidvOPZ2TJSvveXHLz/view?usp=sharing'
 						target='_blank'
 						rel='noreferrer'>
 						Resume
