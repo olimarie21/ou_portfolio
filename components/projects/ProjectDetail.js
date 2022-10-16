@@ -51,10 +51,15 @@ const ProjectDetail = ({ project }) => {
 					/>
 				</div>
 
-				<TechStack>
+				<ProjectSection className='role'>
+					<H4 id='roleHeader'>Role</H4>
+					<Paragraph>{project.role}</Paragraph>
+				</ProjectSection>
+
+				<ProjectSection>
 					<H4>Tech</H4>
 					<Paragraph>{project.tech.join(', ')}</Paragraph>
-				</TechStack>
+				</ProjectSection>
 
 				<AboutSection>
 					<H4>About the Project</H4>
@@ -95,10 +100,14 @@ const Container = styled.div`
 		}
 
 		h4 {
-			margin-bottom: 2%;
+			margin-bottom: 0;
 		}
 
 		.categoryH4 {
+			margin-bottom: 0;
+		}
+
+		.role {
 			margin-bottom: 0;
 		}
 
@@ -182,7 +191,7 @@ const HeaderContainer = styled.div`
 	}
 `
 
-const TechStack = styled.div`
+const ProjectSection = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin: ${pageMargin};
