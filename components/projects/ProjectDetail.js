@@ -107,8 +107,10 @@ const Container = styled.div`
 			margin-bottom: 0;
 		}
 
-		.role {
-			margin-bottom: 0;
+		@media screen and (max-width: 1100px) {
+			.role {
+				margin-bottom: 0;
+			}
 		}
 
 		.imgContainerMobile {
