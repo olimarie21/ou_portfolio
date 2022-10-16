@@ -2,13 +2,14 @@ import styled from 'styled-components'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
-import { FreeMode, Pagination } from 'swiper'
+import SwiperCore, { FreeMode, Pagination, Autoplay } from 'swiper'
 import ProjectItem from './ProjectItem'
 import { font, globalColor, H2, pageMargin } from '../../styles/Styles'
 import FilterListOffIcon from '@mui/icons-material/FilterListOff'
 
 const ProjectSlider = (props) => {
 	const { projects, setProjects, techItemSelected, clearFilter } = props
+	SwiperCore.use([Autoplay])
 
 	return (
 		<Container>
@@ -21,20 +22,28 @@ const ProjectSlider = (props) => {
 				) : null}
 			</H2>
 			<Swiper
-				slidesPerView={'auto'}
 				centeredSlides={true}
+				spaceBetween={44}
+				autoplay={{
+					delay: 3500,
+					disableOnInteraction: true,
+					pauseOnMouseEnter: true,
+				}}
+				modules={[FreeMode]}
 				breakpoints={{
+					0: {
+						slidesPerView: 'auto',
+					},
 					450: {
 						slidesPerView: 'auto',
 						centeredSlides: false,
+						autoplay: false,
 					},
 					1600: {
 						slidesPerView: 4.5,
 						centeredSlides: false,
 					},
-				}}
-				spaceBetween={44}
-				modules={[FreeMode]}>
+				}}>
 				{projects.map((project, i) => (
 					<SwiperSlide key={i}>
 						<ProjectItem

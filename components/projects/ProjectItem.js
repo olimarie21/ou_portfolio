@@ -45,6 +45,7 @@ const Container = styled.div`
 	display: flex;
 	height: 392px;
 	width: 330px;
+	max-width: 80vw;
 	position: relative;
 	margin: 0;
 	border-radius: 90px;
