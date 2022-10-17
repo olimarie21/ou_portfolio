@@ -38,8 +38,8 @@
         "proposal": "https://drive.google.com/file/d/1iIIFzdxPnvRFKfv4vhqNsdGkDpmQ3PMv/view?usp=sharing",
         "shortDesc": "AWS EC2 hosted server running on Node.js with Express and Graphql.",
         "longDesc": [
-            "Courte's server is running on Node.js with Express.js and GraphQL Apollo, it is hosted on an AWS EC2 instance. GraphQL was used in this project in order to allow all of our primary data to be accessed from a single endpoint, with requests that are scaled to our current need.",
-            "As a full-stack developer for this project I integrated user authentication with Firebase Auth, Google OAuth provider with our server side code, utilizing Firebase Admin to perform JWT token validation before users can access sensitive routes. By creating a middleware function that conditionally validates the JWT token passed to our Apollo Server in requests sent to our API we are able to create a user context within our server that can be checked before allowing access to specific data. Additionally, I configured our primary GraphQL schema along with our Apollo Server, integrating it with Mongoose schema to connect to our primary database, MongoDB Atlas.",
+            "Courte's server is running on Node.js with Express.js and GraphQL Apollo and it is hosted on an AWS EC2 instance. GraphQL was used in this project in order to allow all of our primary data to be accessed from a single endpoint, with requests that are scaled to the current need.",
+            "As a full-stack developer for this project I integrated user authentication with Firebase Auth and the Google OAuth provider with our server side code. I utilized Firebase Admin to perform JWT token validation to verify the logged in status of users before allowing them access to sensitive API routes. By creating a middleware function that conditionally validates the JWT token contained in the authorization header of our API requests we are able to create a user context within our server that can then be checked before allowing access to sensitive data. Additionally, I configured our primary GraphQL schema along with our Apollo Server, integrating it with Mongoose schemas to connect to our primary database, MongoDB Atlas.",
             "Courte is a mobile application that offers a comprehensive solution to facilitate the use and sharing of public tennis courts by enabling users to find the closest parks with available courts, manage queues and connect with nearby users to play together."
         ],
         "tech": [
@@ -55,36 +55,12 @@
     },
     {
         "image": [
-            "https://res.cloudinary.com/scave2021/image/upload/v1665347652/portfolio/courte_marketing_mobile_w7kvwg.png",
-            "https://res.cloudinary.com/scave2021/image/upload/v1665347497/portfolio/courte_marketing_desktop_srpxcp.png"
-        ],
-        "slug": "courte-marketing",
-        "category": "Single Page Web App",
-        "role": "Full-stack Developer",
-        "title": "www.courte.app",
-        "gitLink": "https://github.com/olimarie21/Courte-landing-page",
-        "siteLink": "https://www.courte.app",
-        "shortDesc": "A Next.js powered website hosted with Vercel.",
-        "longDesc": [
-            "Courte is a mobile application that offers a comprehensive solution to facilitate the use and sharing of public tennis courts by enabling users to find the closest parks with available courts, manage queues and connect with nearby users to play together.",
-            "Courte's landing page was built with Next.js and Styled Components. Using Next.js allowed us to take advantage of server-side rendering, increasing site performance and decreasing page load time. By using Styled Components we could contain all component code and functionality within a single .js file.",
-            "The site is hosted with Vercel. Site UX/UI by Bruna Weiss."
-        ],
-        "tech": [
-            "Next.js",
-            "Styled Components",
-            "CSS",
-            "Vercel"
-        ]
-    },
-    {
-        "image": [
             "https://res.cloudinary.com/scave2021/image/upload/v1665343119/portfolio/picbeak_mobile_matchview_tfeejy.jpg",
             "https://res.cloudinary.com/scave2021/image/upload/v1665344226/portfolio/picbeak_display_image_desktop_nklodn.jpg"
         ],
         "slug": "picbeak",
         "category": "Full-stack Web App",
-        "role": "Front-end Developer",
+        "role": "Front-end Developer, Project Manager",
         "title": "Picbeak",
         "gitLink": "https://github.com/ijaspreetbhatti/Team-Loon-Picbeak-Frontend",
         "siteLink": "https://www.picbeak.com/",
@@ -92,9 +68,9 @@
         "shortDesc": "Web app that provides educational information about bird species.",
         "longDesc": [
             "www.picbeak.com is a youth-focused web application that provides educational information about region specific bird species. Users can identify birds they spot in the wild and add them to their personal virtual Beakpedia collection to track their progress and unlock new features.",
-            "Picbeak is a web application created using React, the site is hosted with Heroku. As a front-end developer, I developed stateful and streamlined front-end React functional components and interfaced with REST APIs via Axios requests to access and display dynamic data for users. I focused on the 'Identify' feature of the application and responsive header navigation.",
-            "Additionally, I worked to research and configure proper API endpoints to access the external data sources that were then formatted to store in our cloud database, MongoDB Atlas.",
-            "In just 12 weeks, this project was created from concept to launch. During this project I served as both Project Manager and Front-End Developer. Thank you to our UI/UX designer Bruna Weiss and to fellow developers Gabriel Watanabe, Jaspreet Bhatti, Mizuho Tohma, and Yebin Cho!"
+            "Picbeak was built with React and the site is hosted with Heroku. As a front-end developer, I developed stateful and streamlined front-end React functional components and interfaced with REST APIs via Axios requests to access and display dynamic data for users. I focused on the 'Identify' feature of the application and responsive header navigation.",
+            "Additionally, I worked to research and configure proper API endpoints to access the external data sources that were called and formatted to store in our cloud database, MongoDB Atlas.",
+            "In just 12 weeks, this project was created from concept to launch. Thank you to our UI/UX designer Bruna Weiss and to fellow developers Gabriel Watanabe, Jaspreet Bhatti, Mizuho Tohma, and Yebin Cho!"
         ],
         "tech": [
             "React.js",
@@ -111,12 +87,62 @@
     },
     {
         "image": [
+            "https://res.cloudinary.com/scave2021/image/upload/v1665347652/portfolio/courte_marketing_mobile_w7kvwg.png",
+            "https://res.cloudinary.com/scave2021/image/upload/v1665347497/portfolio/courte_marketing_desktop_srpxcp.png"
+        ],
+        "slug": "courte-marketing",
+        "category": "Single Page Web App",
+        "role": "Full-stack Developer",
+        "title": "www.courte.app",
+        "gitLink": "https://github.com/olimarie21/Courte-landing-page",
+        "siteLink": "https://www.courte.app",
+        "shortDesc": "A Next.js powered website hosted with Vercel.",
+        "longDesc": [
+            "Courte is a mobile application that offers a comprehensive solution to facilitate the use and sharing of public tennis courts by enabling users to find the closest parks with available courts, manage queues and connect with nearby users to play together.",
+            "Courte's landing page was built with Next.js and Styled Components. Using Next.js allowed for server-side rendering, increasing site performance and decreasing page load time. By using Styled Components each components code and functionality is contained within a single .js file.",
+            "The site is hosted with Vercel. Site UX/UI by Bruna Weiss."
+        ],
+        "tech": [
+            "Next.js",
+            "Styled Components",
+            "CSS",
+            "Vercel"
+        ]
+    },
+    {
+        "image": [
+            "https://res.cloudinary.com/scave2021/image/upload/v1666039358/portfolio/ou_portfolio_mobile_c21za4.png",
+            "https://res.cloudinary.com/scave2021/image/upload/v1666039358/portfolio/ou_portfolio_desktop_szg8xv.png"
+        ],
+        "slug": "next-portfolio",
+        "category": "Single Page Web App",
+        "role": "Full-stack Developer, UI/UX Designer",
+        "title": "oliviaunderdah.com",
+        "gitLink": "https://github.com/olimarie21/ou_portfolio",
+        "siteLink": null,
+        "shortDesc": "A custom Next.js website hosted by Vercel.",
+        "longDesc": [
+            "From Figma mockups to implementation, I built this site from the ground up with the goal of creating a clean, responsive, and user friendly portfolio website. For mockups, I utilized Figma and for live implementation I used Next.js and Styled Components.",
+            "Next.js ensures fast page load time with server-side rendering and styled componentes allow me to contain each components code and functionality within a single .js file."
+        ],
+        "tech": [
+            "JavaScript",
+            "Next.js",
+            "Figma",
+            "Styled Components",
+            "Swiper.js",
+            "Git",
+            "Vercel"
+        ]
+    },
+    {
+        "image": [
             "https://res.cloudinary.com/scave2021/image/upload/v1665343762/portfolio/scave_display_image_mobile_fzuum7.jpg",
             "https://res.cloudinary.com/scave2021/image/upload/v1665343657/portfolio/scave_display_image_v2_uhxzhk.jpg"
         ],
         "slug": "scave",
         "category": "Progressive Web App",
-        "role": "Web Developer",
+        "role": "Web Developer, Project Manager",
         "title": "Scave",
         "gitLink": "https://github.com/ijaspreetbhatti/Team-Magpie-Scave",
         "siteLink": null,
@@ -124,7 +150,7 @@
         "longDesc": [
             "Scave is a location-based progressive web application that utilizes Google Maps JavaScript API along with geo-location services and Firebase Firestore to facilitate the donation and pick-up of goods within communities. Users can create an account and post items for donation and/or explore items in their area to pick up and claim.",
             "As a developer on this project I implemented the Google Maps JavaScript API along with customized Markers to display real-time user generated data and integrated Algolia search with front-end interace to allow for typo-tolerant searches on Firebase data. Additionally, I built the 'List Item' form utilizing HTML, CSS, and JavaScript, sending data to Firebase to be displayed on the map interface.",
-            "In just 13 weeks, this project was created from concept to launch. During this project I served as both Project Manager and Developer. Thank you to our UI/UX designer Bruna Weiss and to fellow developers Gabriel Watanabe, Jaspreet Bhatti, Mizuho Tohma, and Yebin Cho!"
+            "In just 13 weeks, this project was created from concept to launch. Thank you to our UI/UX designer Bruna Weiss and to fellow developers Gabriel Watanabe, Jaspreet Bhatti, Mizuho Tohma, and Yebin Cho!"
         ],
         "tech": [
             "JavaScript",
