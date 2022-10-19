@@ -35,11 +35,15 @@ export const H2 = styled.h2`
 
 export const H3 = styled.h3`
 	font-weight: 800;
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 30px;
 	color: ${globalColor.primary};
 	font-family: ${font};
 	margin: 0;
+
+	@media screen and (min-width: 450px) {
+		font-size: 22px;
+	}
 `
 
 export const H4 = styled.h4`
