@@ -24,14 +24,14 @@ const ProjectSlider = (props) => {
 			<Swiper
 				centeredSlides={true}
 				spaceBetween={44}
-				autoplay={{
-					delay: 3500,
-					disableOnInteraction: true,
-					pauseOnMouseEnter: true,
-				}}
 				modules={[FreeMode]}
 				breakpoints={{
 					0: {
+						autoplay: {
+							delay: 3500,
+							disableOnInteraction: true,
+							pauseOnMouseEnter: true,
+						},
 						slidesPerView: 'auto',
 					},
 					450: {
@@ -39,9 +39,14 @@ const ProjectSlider = (props) => {
 						centeredSlides: false,
 						autoplay: false,
 					},
-					1600: {
-						slidesPerView: 4.5,
+					1000: {
+						slidesPerView: 2.5,
 						centeredSlides: false,
+					},
+					1600: {
+						slidesPerView: 4,
+						centeredSlides: false,
+						autoplay: false,
 					},
 				}}>
 				{projects.map((project, i) => (

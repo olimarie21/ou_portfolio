@@ -20,7 +20,7 @@ export const H1 = styled.h1`
 	font-size: 30px;
 	line-height: 32px;
 
-	@media screen and (min-width: 700px) {
+	@media screen and (min-width: 750px) {
 		font-size: 32px;
 	}
 `
