@@ -25,13 +25,13 @@ const ProjectSlider = (props) => {
 				centeredSlides={true}
 				spaceBetween={44}
 				modules={[FreeMode]}
+				autoplay={{
+					delay: 3500,
+					disableOnInteraction: true,
+					pauseOnMouseEnter: true,
+				}}
 				breakpoints={{
 					0: {
-						autoplay: {
-							delay: 3500,
-							disableOnInteraction: true,
-							pauseOnMouseEnter: true,
-						},
 						slidesPerView: 'auto',
 					},
 					450: {
@@ -72,11 +72,6 @@ const Container = styled.div`
 		font-weight: 500;
 	}
 
-	.swiper-wrapper {
-		@media screen and (min-width: 450px) {
-			margin: 0 10%;
-		}
-	}
 	.swiper {
 		overflow: hidden;
 		height: 420px;
@@ -85,6 +80,16 @@ const Container = styled.div`
 	.swiper-slide {
 		flex-shrink: 1;
 		max-width: 316px;
+	}
+
+	@media screen and (min-width: 450px) {
+		.swiper-slide:first-child {
+			margin-left: 10vw;
+		}
+
+		.swiper-slide:last-of-type {
+			margin-right: 10%;
+		}
 	}
 
 	.projectHeader {
