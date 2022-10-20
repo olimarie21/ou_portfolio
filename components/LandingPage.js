@@ -49,6 +49,7 @@ const LandingPage = () => {
 				setProjects={setProjects}
 				projects={projectDisplay}
 				clearFilter={clearFilter}
+				tech={techSelection}
 			/>
 			<TechContainer icons={icons} onClick={setTechSelection} />
 		</>

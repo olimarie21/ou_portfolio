@@ -4,27 +4,40 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import SwiperCore, { FreeMode, Pagination, Autoplay } from 'swiper'
 import ProjectItem from './ProjectItem'
-import { font, globalColor, H2, pageMargin } from '../../styles/Styles'
+import {
+	font,
+	globalColor,
+	H2,
+	pageMargin,
+	Paragraph,
+} from '../../styles/Styles'
 import FilterListOffIcon from '@mui/icons-material/FilterListOff'
 
 const ProjectSlider = (props) => {
-	const { projects, setProjects, techItemSelected, clearFilter } = props
+	const { projects, tech, setProjects, techItemSelected, clearFilter } = props
 	SwiperCore.use([Autoplay])
 
 	return (
 		<Container>
-			<H2 className='projectHeader'>
-				Projects{' '}
+			<HeaderContainer>
+				<H2 className='projectHeader'>
+					Projects{' '}
+					{techItemSelected ? (
+						<BtnClearFilter onClick={clearFilter}>
+							<FilterListOffIcon />
+						</BtnClearFilter>
+					) : null}
+				</H2>
 				{techItemSelected ? (
-					<BtnClearFilter onClick={clearFilter}>
-						<FilterListOffIcon />
-					</BtnClearFilter>
+					<Paragraph>
+						<strong>Tech:</strong> {tech}
+					</Paragraph>
 				) : null}
-			</H2>
+			</HeaderContainer>
 			<Swiper
 				centeredSlides={true}
 				spaceBetween={44}
-				modules={[FreeMode]}
+				// modules={[FreeMode]}
 				autoplay={{
 					delay: 3500,
 					disableOnInteraction: true,
@@ -94,11 +107,19 @@ const Container = styled.div`
 
 	.projectHeader {
 		text-align: left;
-		margin: ${pageMargin};
-		margin-top: 50px;
 		display: flex;
 		align-items: center;
 		gap: 20px;
+	}
+`
+const HeaderContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	margin: ${pageMargin};
+	margin-top: 50px;
+
+	p {
+		margin-top: 4px;
 	}
 `
 
