@@ -23,9 +23,11 @@ const Experience = () => {
 						in the tech world!
 					</Paragraph>
 					<Paragraph className='techStack'>
-						<strong>Tech stack</strong>
-						<ArrowForwardRoundedIcon /> JavaScript | React | React Native | REST
-						APIs | GraphQL | Node.js | Express.js | MongoDB | Next.js | Java
+						<strong>
+							Tech stack <ArrowForwardRoundedIcon />
+						</strong>
+						JavaScript | React | React Native | REST APIs | GraphQL | Node.js |
+						Express.js | MongoDB | Next.js | Java
 					</Paragraph>
 				</div>
 
@@ -68,11 +70,22 @@ const Main = styled.div`
 
 		.techStack {
 			display: flex;
-			align-items: center;
+			flex-direction: column;
+			align-items: start;
 			margin-top: 12px;
 
-			svg {
-				color: ${globalColor.darkText};
+			strong {
+				display: flex;
+				align-items: center;
+
+				svg {
+					color: ${globalColor.darkText};
+				}
+			}
+
+			@media screen and (min-width: 1200px) {
+				flex-direction: row;
+				align-items: center;
 			}
 		}
 	}
