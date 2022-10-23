@@ -7,7 +7,6 @@ import experience from '../text/experience.json'
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded'
 
 const Experience = () => {
-	console.log(experience)
 	return (
 		<Container>
 			<Header />
