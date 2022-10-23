@@ -71,6 +71,10 @@ const Main = styled.div`
 			display: flex;
 			align-items: center;
 			margin-top: 12px;
+
+			svg {
+				color: ${globalColor.darkText};
+			}
 		}
 	}
 
