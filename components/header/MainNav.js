@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styled from 'styled-components'
 import SocialNav from './SocialNav'
 import { globalColor, font } from '../../styles/Styles'
+import Link from 'next/link'
 
 const MainNav = () => {
 	return (
@@ -9,12 +10,7 @@ const MainNav = () => {
 			<Container>
 				<MainMenu>
 					<ListItem>
-						<a
-							href='https://drive.google.com/file/d/1ByCPTMhKr1A4-4CidvOPZ2TJSvveXHLz/view?usp=sharing'
-							target='_blank'
-							rel='noreferrer'>
-							Resume
-						</a>
+						<Link href='/Experience'>Experience</Link>
 					</ListItem>
 				</MainMenu>
 

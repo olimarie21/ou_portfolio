@@ -4,22 +4,18 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import EmailIcon from '@mui/icons-material/Email'
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded'
-import { Link } from '@mui/material'
+// import { Link } from '@mui/material'
+import Link from 'next/link'
 
 const MobileMenu = () => {
 	return (
 		<Container>
-			<Link href={'/'} className='homeIcon'>
-				<HomeRoundedIcon />
+			<Link href={'/'}>
+				<HomeRoundedIcon className='homeIcon' />
 			</Link>
 			<MainMenu>
 				<MainItem>
-					<a
-						href='https://drive.google.com/file/d/1ByCPTMhKr1A4-4CidvOPZ2TJSvveXHLz/view?usp=sharing'
-						target='_blank'
-						rel='noreferrer'>
-						Resume
-					</a>
+					<Link href='/Experience'>Experience</Link>
 				</MainItem>
 			</MainMenu>
 			<SocialIcons>
@@ -70,11 +66,9 @@ const Container = styled.nav`
 		position: absolute;
 		top: 4.5vh;
 		left: 8vw;
-		svg {
-			color: ${globalColor.primary};
-			height: 40px;
-			width: 40px;
-		}
+		color: ${globalColor.primary};
+		height: 40px;
+		width: 40px;
 	}
 `
 

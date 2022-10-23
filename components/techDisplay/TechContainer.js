@@ -57,13 +57,11 @@ const Container = styled.div`
 `
 
 const List = styled.div`
+	margin: 0 0 0 10%;
 	.swiper {
 		overflow: hidden;
 	}
 
-	margin: 0 0 0 10%;
-	.swiper-wrapper {
-	}
 	.swiper-slide {
 		display: flex;
 		flex-shrink: 1;
@@ -72,6 +70,10 @@ const List = styled.div`
 		height: 7rem;
 		margin: 0;
 	}
+
+	// .swiper-slide:first-child {
+	// 	margin-left: 10vw;
+	// }
 
 	display: flex;
 	gap: 2%;

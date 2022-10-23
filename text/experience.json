@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Full-stack Developer",
+        "company": "Codeca Educational Technology and Services Inc.",
+        "location": "Vancouver, B.C.",
+        "dates": "August 2022 - present",
+        "description": [
+            "Utilize JavaScript to update curriculum modules on browser based VR coding platform to enhance user experience and engage the target demographic.",
+            "Update site's subscription flow UI utilizing JavaScript, HTML and Sass."
+        ]
+    },
+    {
+        "title": "Marker",
+        "company": "Langara College",
+        "location": "Vancouver, B.C.",
+        "dates": "December 2021 - August 2022",
+        "description": [
+            "Assisted instructors by grading assignments and providing feedback to term 1 and term 2 students in the Post-degree Web and Mobile App Design & Development (WMDD) program.",
+            "Courses marked include HTML/CSS 2 and Graphic Design for Web."
+        ]
+    },
+    {
+        "title": "Marketing Communications Specialist",
+        "company": "Big Brothers Big Sisters of Metro Milwaukee",
+        "location": "Wisconsin, U.S.",
+        "dates": "January 2020 - December 2020",
+        "description": [
+            "Served as agency’s marketing and graphic design lead, I collaborating with program staff to meet agency marketing and recruitment need",
+            "Managed and executed agency website updates on the WordPress, regularly reviewing the site for UI and content revisions.",
+            "Created a comprehensive marketing strategy to enhance agency reach in the local market, leading to increased volunteer sign-ups and recognition."
+        ]
+    },
+    {
+        "title": "Marketing & Digital Communications Coordinator",
+        "company": "United Community Center",
+        "location": "Wisconsin, U.S.",
+        "dates": "July 2016 - September 2019",
+        "description": [
+            "Served as the marketing and digital content lead and graphic designer.",
+            "Worked with an outside web design firm to manage and assist in the rebuild and re-branding of five agency websites, served as the internal project leader.",
+            "Managed targeted multi-channel enrollment marketing for the agency's public charter schools.",
+            "Led Latino Arts, Inc. marketing, managing a ~$15,000 marketing budget."
+        ]
+    },
+    {
+        "title": "Communications and Development Assistant",
+        "company": "Milwaukee Institute of Art and Design",
+        "location": "Wisconsin, U.S.",
+        "dates": "August 2015 - July 2016",
+        "description": [
+            "Managed the production and output of the college's monthly e-newsletter and managed college social media accounts, increasing engagement among target audiences.",
+            "Successfully designed and managed the production of event signage for the 10th anniversary of the college's largest annual fundraiser.",
+            "Created and published original content on the college’s website."
+        ]
+    }
+]
