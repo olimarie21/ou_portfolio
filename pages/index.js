@@ -11,6 +11,14 @@ export default function Home() {
 				<title>Olivia Underdah</title>
 				<meta name='description' content='Full-stack developer' />
 				<link rel='icon' href='/favicon.png' />
+				<meta property='og:url' content='www.oliviaunderdah.com' />
+				<meta property='og:type' content='website' />
+				<meta property='og:title' content='Olivia Underdah' />
+				<meta
+					property='og:description'
+					content='Vancouver based Full-stack Developer'
+				/>
+				<meta property='og:image' content='/sitePreviewOU.png' />
 			</Head>
 			<Header />
 			<Main>
