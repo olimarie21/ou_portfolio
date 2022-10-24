@@ -9,16 +9,18 @@ export default function Home() {
 		<Container>
 			<Head>
 				<title>Olivia Underdah</title>
-				<meta name='description' content='Full-stack developer' />
 				<link rel='icon' href='/favicon.png' />
+				<meta name='title' property='og:title' content='Olivia Underdah'></meta>
 				<meta property='og:url' content='www.oliviaunderdah.com' />
-				<meta property='og:type' content='website' />
-				<meta property='og:title' content='Olivia Underdah' />
+				<meta property='og:type' content='Website' />
+				<meta name='author' content='Olivia Underdah'></meta>
 				<meta
 					property='og:description'
 					content='Vancouver based Full-stack Developer'
 				/>
-				<meta property='og:image' content='/sitePreviewOU.png' />
+				<meta name='image' property='og:image' content='/sitePreviewOU.png' />
+				<meta property='og:image:width' content='1200' />
+				<meta property='og:image:height' content='630' />
 			</Head>
 			<Header />
 			<Main>
