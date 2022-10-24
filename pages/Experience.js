@@ -23,9 +23,9 @@ const Experience = () => {
 						in the tech world!
 					</Paragraph>
 					<Paragraph className='techStack'>
-						<strong>
+						<span>
 							Tech stack <ArrowForwardRoundedIcon />
-						</strong>
+						</span>
 						JavaScript | React | React Native | REST APIs | GraphQL | Node.js |
 						Express.js | MongoDB | Next.js | Java
 					</Paragraph>
@@ -74,12 +74,16 @@ const Main = styled.div`
 			align-items: start;
 			margin-top: 12px;
 
-			strong {
+			span {
 				display: flex;
 				align-items: center;
+				font-weight: bold;
 
 				svg {
 					color: ${globalColor.darkText};
+					height: 18px;
+					width: 18px;
+					padding: 0 4px;
 				}
 			}
 

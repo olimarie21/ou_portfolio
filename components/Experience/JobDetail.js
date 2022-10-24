@@ -15,7 +15,7 @@ const JobDetail = (props) => {
 			<Description>
 				{description.map((item, i) => (
 					<li key={i}>
-						<div id='listMarker'></div>
+						<span id='listMarker'></span>
 						{item}
 					</li>
 				))}
