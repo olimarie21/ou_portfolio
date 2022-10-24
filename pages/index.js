@@ -16,12 +16,12 @@ export default function Home() {
 				<meta name='author' content='Olivia Underdah'></meta>
 				<meta
 					property='og:description'
-					content='Vancouver based Full-stack Developer'
+					content='Vancouver based Full-stack Developer with a passion for problem solving.'
 				/>
 				<meta
 					name='image'
 					property='og:image'
-					content='https://res.cloudinary.com/scave2021/image/upload/v1666039358/portfolio/ou_portfolio_desktop_szg8xv.png'
+					content='https://res.cloudinary.com/scave2021/image/upload/v1666632904/portfolio/ou_portfolio_desktop_wbciok.png'
 				/>
 				<meta property='og:image:width' content='1200' />
 				<meta property='og:image:height' content='630' />
