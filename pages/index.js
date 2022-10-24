@@ -18,7 +18,11 @@ export default function Home() {
 					property='og:description'
 					content='Vancouver based Full-stack Developer'
 				/>
-				<meta name='image' property='og:image' content='/sitePreviewOU.png' />
+				<meta
+					name='image'
+					property='og:image'
+					content='https://res.cloudinary.com/scave2021/image/upload/v1666039358/portfolio/ou_portfolio_desktop_szg8xv.png'
+				/>
 				<meta property='og:image:width' content='1200' />
 				<meta property='og:image:height' content='630' />
 			</Head>
