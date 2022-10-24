@@ -167,7 +167,6 @@ const Headline = styled.p`
 	font-size: 14px;
 	color: ${globalColor.lightText};
 	margin: 0;
-	margin-top: 8px;
 	padding: 0;
 	font-family: ${font};
 
