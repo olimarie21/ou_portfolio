@@ -55,6 +55,7 @@ const ProjectSlider = (props) => {
 					1000: {
 						slidesPerView: 'auto',
 						centeredSlides: false,
+						autoplay: false,
 					},
 					1600: {
 						slidesPerView: 4,
