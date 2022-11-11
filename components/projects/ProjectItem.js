@@ -71,7 +71,6 @@ const DescContainer = styled.div`
 	padding: 4% 8%;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	cursor: pointer;
-	// max-width: 80vw;
 
 	.projectDetailDisplay {
 		h4 {
@@ -92,7 +91,8 @@ const DescContainer = styled.div`
 			justify-content: center;
 			align-items: center;
 			color: ${globalColor.lightText};
-			font-size: 14px;
+			font-size: 0.92rem;
+			letter-spacing: 1px;
 			font-weight: 600;
 			font-family: ${font};
 			text-align: center;
@@ -106,7 +106,7 @@ const DescContainer = styled.div`
 			display: none;
 			p {
 				display: flex;
-				font-size: 12px;
+				font-size: 0.8rem;
 				font-weight: 400;
 				font-family: ${font};
 				color: ${globalColor.darkText};
