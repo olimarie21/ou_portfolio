@@ -17,17 +17,13 @@ export const H1 = styled.h1`
 	margin: 0;
 	padding: 0;
 	font-family: ${font};
-	font-size: 30px;
+	font-size: 2rem;
 	line-height: 32px;
-
-	@media screen and (min-width: 750px) {
-		font-size: 32px;
-	}
 `
 
 export const H2 = styled.h2`
 	font-weight: 700;
-	font-size: 26px;
+	font-size: 1.7rem;
 	color: ${globalColor.darkText};
 	font-family: ${font};
 	margin: 0;
@@ -35,20 +31,16 @@ export const H2 = styled.h2`
 
 export const H3 = styled.h3`
 	font-weight: 800;
-	font-size: 20px;
+	font-size: 1.4rem;
 	line-height: 30px;
 	color: ${globalColor.primary};
 	font-family: ${font};
 	margin: 0;
-
-	@media screen and (min-width: 450px) {
-		font-size: 22px;
-	}
 `
 
 export const H4 = styled.h4`
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 1.15rem;
 	color: ${globalColor.darkText};
 	font-family: ${font};
 	margin: 0;
@@ -56,7 +48,7 @@ export const H4 = styled.h4`
 
 export const H4_light = styled.h4`
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 1.15rem;
 	color: ${globalColor.lightText};
 	font-family: ${font};
 	margin: 0;
@@ -64,7 +56,7 @@ export const H4_light = styled.h4`
 
 export const Paragraph = styled.p`
 	font-weight: 400;
-	font-size: 15px;
+	font-size: 0.94rem;
 	line-height: 21px;
 	color: ${globalColor.darkText};
 	font-family: ${font};
