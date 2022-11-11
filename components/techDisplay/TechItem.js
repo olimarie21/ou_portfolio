@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { globalColor } from '../../styles/Styles'
 
 const TechItem = (props) => {
@@ -19,6 +19,17 @@ const TechItem = (props) => {
 		</Container>
 	)
 }
+const growAnimation = keyframes`
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+`
 
 const Container = styled.button`
 	border: none;
@@ -32,14 +43,7 @@ const Container = styled.button`
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	cursor: pointer;
 	:hover {
-		transform: scale(1.2);
-	}
-
-	@media screen and (max-width: 450px) {
-		:hover {
-			background: ${globalColor.lightText};
-			box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
-		}
+		animation: ${growAnimation} 2s infinite;
 	}
 `
 
