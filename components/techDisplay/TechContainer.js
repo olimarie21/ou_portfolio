@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
-import { Navigation, Pagination } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination } from 'swiper'
 import TechItem from './TechItem'
 import { H2, pageMargin } from '../../styles/Styles'
 import 'swiper/css'

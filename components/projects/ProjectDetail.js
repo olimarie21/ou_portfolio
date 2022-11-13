@@ -9,7 +9,7 @@ import {
 } from '../../styles/Styles'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import Image from 'next/image'
-import projects from '../../text/projects.json'
+import projects from '../../public/data/projects.json'
 
 const ProjectDetail = ({ project }) => {
 	return (

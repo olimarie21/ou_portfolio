@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import projects from '../text/projects.json'
+import projects from '../public/data/projects.json'
 import ProjectSlider from './projects/ProjectSlider'
 import TechContainer from './techDisplay/TechContainer'
-import icons from '../text/icons.json'
+import icons from '../public/data/icons.json'
 
 const LandingPage = () => {
 	const [projectDisplay, setProjects] = useState(projects)

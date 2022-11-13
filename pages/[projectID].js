@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Footer from '../components/Footer'
 import Header from '../components/header/Header'
 import ProjectDetail from '../components/projects/ProjectDetail'
-import projects from '../text/projects.json'
+import projects from '../public/data/projects.json'
 
 export default function Project({ project }) {
 	return (

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { font, H2, H3, H4, Paragraph, globalColor } from '../../styles/Styles'
+import { font, H4, Paragraph, globalColor } from '../../styles/Styles'
 
 const JobDetail = (props) => {
 	const { experience } = props

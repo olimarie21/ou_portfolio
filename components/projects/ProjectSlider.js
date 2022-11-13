@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
-import SwiperCore, { FreeMode, Pagination, Autoplay } from 'swiper'
+import SwiperCore, { Autoplay } from 'swiper'
 import ProjectItem from './ProjectItem'
 import {
 	font,

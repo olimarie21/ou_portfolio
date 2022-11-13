@@ -3,7 +3,7 @@ import Header from '../components/header/Header'
 import styled from 'styled-components'
 import { H2, Paragraph, globalColor } from '../styles/Styles'
 import JobDetail from '../components/Experience/JobDetail'
-import experience from '../text/experience.json'
+import experience from '../public/data/experience.json'
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded'
 
 const Experience = () => {
