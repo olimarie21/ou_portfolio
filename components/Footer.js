@@ -30,6 +30,7 @@ const Container = styled.div`
 		display: flex;
 		align-items: center;
 		gap: 16px;
+		background: ${globalColor.primary};
 
 		ul {
 			gap: 16px;

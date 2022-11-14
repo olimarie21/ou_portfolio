@@ -156,6 +156,11 @@ const Text = styled.div`
 	text-align: left;
 	margin-top: 5vh;
 
+	h1,
+	p {
+		background: ${globalColor.primary};
+	}
+
 	@media screen and (min-width: 750px) {
 		margin-top: 8vh;
 		margin-left: 10vw;
