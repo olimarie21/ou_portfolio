@@ -44,7 +44,7 @@ const ProjectDetail = ({ project }) => {
 				<div className='imgContainerMobile'>
 					<Image
 						src={project.image.length > 1 ? project.image[1] : project.image[0]}
-						alt={'image'}
+						alt={`image for ${project.title}`}
 						layout='fill'
 						objectFit='cover'
 						quality={100}
