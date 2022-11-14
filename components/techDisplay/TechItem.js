@@ -15,6 +15,9 @@ const TechItem = (props) => {
 					quality={100}
 					alt={alt}
 				/>
+				<span className='visually-hidden'>
+					Click to see projects that use {alt}
+				</span>
 			</ImgContainer>
 		</Container>
 	)

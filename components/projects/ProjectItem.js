@@ -24,6 +24,9 @@ const ProjectItem = (props) => {
 
 					<a href={gitLink}>
 						<GitHubIcon />
+						<span className='visually-hidden'>
+							Visit the {title} GitHub Repository
+						</span>
 					</a>
 				</div>
 				<Paragraph>{shortDesc}</Paragraph>
@@ -33,7 +36,9 @@ const ProjectItem = (props) => {
 					<p>{tech.join(', ')}</p>
 
 					<Link href={`/${slug}`} className='getDetails'>
-						<div className='getDetailBtn'>Learn more</div>
+						<div className='getDetailBtn'>
+							Learn more<span className='visually-hidden'>about {title}</span>
+						</div>
 					</Link>
 				</div>
 			</DescContainer>
