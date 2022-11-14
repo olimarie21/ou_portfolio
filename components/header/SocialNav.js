@@ -13,6 +13,7 @@ const SocialNav = () => {
 					target='_blank'
 					rel='noreferrer'>
 					<EmailIcon />
+					<span className='visually-hidden'>send an email to Olivia</span>
 				</a>
 			</ListItem>
 			<ListItem>
@@ -21,6 +22,9 @@ const SocialNav = () => {
 					target='_blank'
 					rel='noreferrer'>
 					<GitHubIcon />
+					<span className='visually-hidden'>
+						Visit Olivia&#39;s GitHub Account
+					</span>
 				</a>
 			</ListItem>
 			<ListItem>
@@ -29,6 +33,9 @@ const SocialNav = () => {
 					target='_blank'
 					rel='noreferrer'>
 					<LinkedInIcon />
+					<span className='visually-hidden'>
+						Visit Olivia&#39;s LinkedIn Page
+					</span>
 				</a>
 			</ListItem>
 		</SocialIcons>

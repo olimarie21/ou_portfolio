@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import { react, useState } from 'react'
+import { useState } from 'react'
 import styled from 'styled-components'
 import { globalColor, H1, font } from '../../styles/Styles'
 import MainNav from './MainNav'
@@ -11,6 +10,7 @@ const Header = () => {
 	const openMenu = () => {
 		const hamburger = document.querySelector('.button')
 		hamburger.classList.toggle('is-opened')
+
 		setShowMenu(!showMenu)
 	}
 

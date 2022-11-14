@@ -1,10 +1,9 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { globalColor, font } from '../../styles/Styles'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import EmailIcon from '@mui/icons-material/Email'
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded'
-// import { Link } from '@mui/material'
 import Link from 'next/link'
 
 const MobileMenu = () => {
@@ -15,6 +14,9 @@ const MobileMenu = () => {
 			</Link>
 			<MainMenu>
 				<MainItem>
+					<span className='visually-hidden'>
+						Learn about Olivia&#39;s professional experience
+					</span>
 					<Link href='/Experience'>Experience</Link>
 				</MainItem>
 			</MainMenu>
@@ -33,6 +35,9 @@ const MobileMenu = () => {
 						target='_blank'
 						rel='noreferrer'>
 						<GitHubIcon />
+						<span className='visually-hidden'>
+							Visit Olivia&#39;s GitHub Account
+						</span>
 					</a>
 				</ListItem>
 				<ListItem>
@@ -41,12 +46,23 @@ const MobileMenu = () => {
 						target='_blank'
 						rel='noreferrer'>
 						<LinkedInIcon />
+						<span className='visually-hidden'>
+							Visit Olivia&#39;s LinkedIn Page
+						</span>
 					</a>
 				</ListItem>
 			</SocialIcons>
 		</Container>
 	)
 }
+const showMenuAnimation = keyframes`
+		0%: {
+			height: 0;
+		}
+		100%: {
+			height: 100vh;
+		}
+`
 
 const Container = styled.nav`
 	z-index: 100;
@@ -61,6 +77,7 @@ const Container = styled.nav`
 	top: 0;
 	right: 0;
 	gap: 40px;
+	animation: ${showMenuAnimation} 1s ease-in;
 
 	.homeIcon {
 		position: absolute;

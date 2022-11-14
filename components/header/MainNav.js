@@ -10,6 +10,9 @@ const MainNav = () => {
 			<Container>
 				<MainMenu>
 					<ListItem>
+						<span className='visually-hidden'>
+							Learn about Olivia&#39;s professional experience
+						</span>
 						<Link href='/Experience'>Experience</Link>
 					</ListItem>
 				</MainMenu>
