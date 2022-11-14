@@ -20,6 +20,7 @@ const ProjectDetail = ({ project }) => {
 						{project.siteLink != null ? (
 							<a href={project.siteLink} target='_blank' rel='noreferrer'>
 								<H2>{project.title}</H2>
+								<span className='visually-hidden'> - link to live site</span>
 							</a>
 						) : (
 							<H2>{project.title}</H2>
@@ -27,6 +28,9 @@ const ProjectDetail = ({ project }) => {
 
 						<a href={project.gitLink} target='_blank' rel='noreferrer'>
 							<GitHubIcon />
+							<span className='visually-hidden'>
+								Visit the {project.title} GitHub Repository
+							</span>
 						</a>
 					</div>
 					<H4 className='categoryH4'>{project.category}</H4>
