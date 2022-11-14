@@ -1,4 +1,5 @@
 import Footer from '../components/Footer'
+import Head from 'next/head'
 import Header from '../components/header/Header'
 import styled from 'styled-components'
 import { H2, Paragraph, globalColor } from '../styles/Styles'
@@ -9,6 +10,21 @@ import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded'
 const Experience = () => {
 	return (
 		<Container>
+			<Head>
+				<title>Olivia Underdah - Professional Experience</title>
+				<link rel='icon' href='/favicon.png' />
+				<meta name='title' property='og:title' content='Olivia Underdah'></meta>
+				<meta property='og:url' content='www.oliviaunderdah.com' />
+				<meta property='og:type' content='Website' />
+				<meta name='author' content='Olivia Underdah'></meta>
+				<meta
+					name='image'
+					property='og:image'
+					content='https://res.cloudinary.com/scave2021/image/upload/v1666632904/portfolio/ou_portfolio_desktop_wbciok.png'
+				/>
+				<meta property='og:image:width' content='1200' />
+				<meta property='og:image:height' content='630' />
+			</Head>
 			<Header />
 			<Main>
 				<H2>Experience</H2>

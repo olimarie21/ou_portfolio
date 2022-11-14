@@ -9,7 +9,7 @@ export default function Project({ project }) {
 	return (
 		<Container>
 			<Head>
-				<title>Olivia Underdah</title>
+				<title>Olivia Underdah - Project Details</title>
 				<meta name='description' content='Full-stack developer' />
 				<link rel='icon' href='/favicon.png' />
 			</Head>
