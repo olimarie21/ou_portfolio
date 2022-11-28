@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { globalColor, H1, font } from '../../styles/Styles'
 import MainNav from './MainNav'
 import MobileMenu from './MobileMenu'
@@ -58,12 +58,27 @@ const Header = () => {
 	)
 }
 
+const slideDown = keyframes`
+	0% {
+		transform: translateY(-1000px);
+	}
+	75% {
+		transform: translateY(18px);
+	}
+	100% { 
+		transform: translateY(0px);
+	}
+`
+
 const Heading = styled.header`
 	margin: 0;
 	padding: 0;
 	position: relative;
 	width: 100%;
 	height: 160px;
+	transition: all ease;
+	animation: ${slideDown} 0.75s 1;
+	backface-visibility: none;
 
 	@media screen and (min-width: 750px) {
 		height: 274px;
