@@ -5,18 +5,18 @@
         "location": "Vancouver, B.C.",
         "dates": "August 2022 - present",
         "description": [
-            "Utilize JavaScript to update curriculum modules on browser based VR coding platform to enhance user experience and engage the target demographic.",
-            "Update site's subscription flow UI utilizing JavaScript, HTML and Sass."
+            "Recreate primary lesson modules from scratch - writing, editing, and utilizing JavaScript to implement the updated curriculum on the browser-based virtual reality coding platform.",
+            "Update the subscription flow user interface along with Stripe payment integration, simplifying the user on-boarding experience. Implement updates with JavaScript, HTML, and Sass."
         ]
     },
     {
-        "title": "Marker",
+        "title": "Teaching Assistant",
         "company": "Langara College",
         "location": "Vancouver, B.C.",
         "dates": "December 2021 - August 2022",
         "description": [
             "Assisted instructors by grading assignments and providing feedback to term 1 and term 2 students in the Post-degree Web and Mobile App Design & Development (WMDD) program.",
-            "Courses marked include HTML/CSS 2 and Graphic Design for Web."
+            "Courses marked: HTML/CSS 2 and Graphic Design for Web."
         ]
     },
     {
@@ -25,7 +25,7 @@
         "location": "Wisconsin, U.S.",
         "dates": "January 2020 - December 2020",
         "description": [
-            "Served as agency's marketing and graphic design lead, collaborating with program staff to meet agency marketing and recruitment need",
+            "Served as agency's marketing and graphic design lead, collaborating with program staff to meet agency marketing and recruitment needs.",
             "Managed and executed agency website updates on the WordPress platform, regularly reviewing the site for UI and content revisions.",
             "Created a comprehensive marketing strategy to enhance agency reach in the local market, leading to increased volunteer sign-ups and recognition."
         ]
@@ -50,7 +50,7 @@
         "description": [
             "Managed the production and output of the college's monthly e-newsletter and managed college social media accounts, increasing engagement among target audiences.",
             "Successfully designed and managed the production of event signage for the 10th anniversary of the college's largest annual fundraiser.",
-            "Created and published original content on the college’s website."
+            "Created and published original content on the college's website."
         ]
     }
 ]
