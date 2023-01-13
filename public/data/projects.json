@@ -1,6 +1,30 @@
 [
     {
         "image": [
+            "https://res.cloudinary.com/scave2021/image/upload/v1673642943/portfolio/van-art-mobile_xdxntk.png",
+            "https://res.cloudinary.com/scave2021/image/upload/v1673642944/portfolio/van-art_desktop_yue3nq.png"
+        ],
+        "slug": "van-art-map",
+        "category": "Next.js App",
+        "role": "Full-stack Developer",
+        "title": "Vancity Public Art",
+        "gitLink": "https://github.com/olimarie21/vancouver-art-map",
+        "siteLink": "https://vancouver-art-map.vercel.app/",
+        "shortDesc": "A map interface that displays public art in Vancouver.",
+        "longDesc": [
+            "This project integrates data from the City of Vancouver's Open Data Portal with Google Maps JavaScript API, displaying location based information about outdoor public art within the City of Vancouver. The front-end interface is built using Next.js, Material UI, and Google Maps JavaScript API.",
+            "This project is still under development and features are being added, including saved locations, user image upload and custom art viewing routes. A server side component is being built with Typescript, Node, Express and Postgresql to allow for additional data storage and manipulation."
+        ],
+        "tech": [
+            "Next.js",
+            "React.js",
+            "Google Maps API",
+            "Material UI",
+            "Git"
+        ]
+    },
+    {
+        "image": [
             "https://res.cloudinary.com/scave2021/image/upload/v1665343107/portfolio/courte_display_image_desktop_duwboa.png"
         ],
         "slug": "courte",
@@ -12,7 +36,7 @@
         "proposal": "https://drive.google.com/file/d/1iIIFzdxPnvRFKfv4vhqNsdGkDpmQ3PMv/view?usp=sharing",
         "shortDesc": "A mobile application that facilitates the use and sharing of tennis courts.",
         "longDesc": [
-            "Courte is a mobile application that offers a comprehensive solution to facilitate the use and sharing of public tennis courts by enabling users to find the closest parks with available courts, manage queues and connect with nearby users to play together. Courte's front-end was built using React Native with Expo along with the Native Base component library. Courte utilizes the devices native features, including location and maps.",
+            "Courte is a mobile application that offers a comprehensive solution to facilitate the shared use of public tennis courts by enabling users to find the closest parks with available courts, manage queues, and connect with nearby users to play together. Courte's front-end was built using React Native with Expo along with the Native Base component library. Courte utilizes the devices native features, including location and maps.",
             "As a full-stack developer I integrated user authentication with Firebase Authentication and the Google OAuth provider with the login and sign-up flow. I integrated the Google Maps SDK with Courte in order to display dynamic park data pulled from MongoDB via GraphQL queries.",
             "This project was created from concept to delivery in just 12 weeks, this would not have been possible without such a talented team. Thank you to our UI/UX designer Bruna Weiss and to fellow developers Gabriel Watanabe, Jaspreet Bhatti, Mizuho Tohma, Gustavo Monte and Yebin Cho for making Courte possible!"
         ],
@@ -38,9 +62,9 @@
         "proposal": "https://drive.google.com/file/d/1iIIFzdxPnvRFKfv4vhqNsdGkDpmQ3PMv/view?usp=sharing",
         "shortDesc": "AWS EC2 hosted server running on Node.js with Express and Graphql.",
         "longDesc": [
-            "Courte's server is running on Node.js with Express.js and GraphQL Apollo and it is hosted on an AWS EC2 instance. GraphQL allows all of our data to be accessed from a single endpoint, with requests that are scaled to the current need.",
-            "As a full-stack developer, I integrated user authentication with Firebase Auth and the Google OAuth provider with our server side code. I utilized Firebase Admin to perform JWT token validation to verify the logged in status of users before allowing them access to sensitive API routes. A middleware function conditionally validates the JWT token contained in the authorization header of our API requests, creating a user context within our server to protect access to sensitive data. Additionally, I configured our primary GraphQL schema along with our Apollo Server, integrating it with Mongoose schemas to connect to our primary database, MongoDB Atlas.",
-            "Courte is a mobile application that offers a comprehensive solution to facilitate the use and sharing of public tennis courts by enabling users to find the closest parks with available courts, manage queues and connect with nearby users to play together."
+            "Courte's server is running on Node.js with Express.js and GraphQL Apollo and it is hosted on an AWS EC2 instance. GraphQL allows all data to be accessed from a single endpoint, with requests that are scaled to the current need.",
+            "As a full-stack developer, I integrated user authentication with Firebase Auth and the Google OAuth provider with our server side code. I utilized Firebase Admin to perform JWT token validation to verify the logged in status of users before allowing access to sensitive API routes. A middleware function conditionally validates the JWT token contained in the authorization header of API requests, creating a user context within the server to protect access to sensitive data. Additionally, I configured the primary GraphQL schema along with the Apollo Server, integrating it with Mongoose schemas to connect to MongoDB Atlas.",
+            "Courte is a mobile application that offers a comprehensive solution to facilitate shared use of public tennis courts by enabling users to find the closest parks with available courts, manage queues, and connect with nearby users to play together."
         ],
         "tech": [
             "Express.js",
@@ -69,7 +93,7 @@
         "longDesc": [
             "www.picbeak.com is a youth-focused web application that provides educational information about region specific bird species. Users can identify birds they spot in the wild and add them to their personal virtual Beakpedia collection to track their progress and unlock new features.",
             "Picbeak was built with React and the site is hosted with Heroku. As a front-end developer, I developed stateful and streamlined front-end React functional components and interfaced with REST APIs via Axios requests to access and display dynamic data for users. I focused on the 'Identify' feature of the application and responsive header navigation.",
-            "Additionally, I worked to research and configure proper API endpoints to access the external data sources that were called and formatted to store in our cloud database, MongoDB Atlas.",
+            "Additionally, I worked to research and configure proper API endpoints to access the external data sources that were called and formatted to store in the cloud database, MongoDB Atlas.",
             "In just 12 weeks, this project was created from concept to launch. Thank you to our UI/UX designer Bruna Weiss and to fellow developers Gabriel Watanabe, Jaspreet Bhatti, Mizuho Tohma, and Yebin Cho!"
         ],
         "tech": [
@@ -98,12 +122,13 @@
         "siteLink": "https://www.courte.app",
         "shortDesc": "A Next.js powered website hosted with Vercel.",
         "longDesc": [
-            "Courte is a mobile application that offers a comprehensive solution to facilitate the use and sharing of public tennis courts by enabling users to find the closest parks with available courts, manage queues and connect with nearby users to play together.",
+            "Courte is a mobile application that offers a comprehensive solution to facilitate the shared use of public tennis courts by enabling users to find the closest parks with available courts, manage queues, and connect with nearby users to play together.",
             "Courte's landing page was built with Next.js and Styled Components. Using Next.js allowed for server-side rendering, increasing site performance and decreasing page load time. By using Styled Components each components code and functionality is contained within a single .js file.",
             "The site is hosted with Vercel. Site UX/UI by Bruna Weiss."
         ],
         "tech": [
             "Next.js",
+            "React.js",
             "Styled Components",
             "CSS",
             "Vercel"
@@ -128,6 +153,7 @@
         "tech": [
             "JavaScript",
             "Next.js",
+            "React.js",
             "Figma",
             "Styled Components",
             "Swiper.js",
@@ -202,11 +228,11 @@
         "siteLink": null,
         "shortDesc": "A simple list tracker app built with React and GraphQL.",
         "longDesc": [
-            "This project is demonstrates a simple interface to track people and their corresponding cars. The server utilizes Express.js and GraphQL Apollo, and is running on Node.js. Lodash is utilized to assist with performing GraphQL queries and mutations.",
+            "This project demonstrates a simple interface to track people and their corresponding cars. The server utilizes Express.js and GraphQL Apollo, and is running on Node.js. Lodash is utilized to assist with performing GraphQL queries and mutations.",
             "The front-end is built with React and the antd component library was used to rapidly prototype the interface."
         ],
         "tech": [
-            "React",
+            "React.js",
             "GraphQL",
             "AntD",
             "Express.js",

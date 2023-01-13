@@ -8,6 +8,10 @@
         "alt": "Node.js"
     },
     {
+        "link": "/images/logos/react_logo.png",
+        "alt": "React.js"
+    },
+    {
         "link": "/images/logos/express_logo.png",
         "alt": "Express.js"
     },
