@@ -1,26 +1,33 @@
 [
     {
         "image": [
-            "https://res.cloudinary.com/scave2021/image/upload/v1673642943/portfolio/van-art-mobile_xdxntk.png",
-            "https://res.cloudinary.com/scave2021/image/upload/v1673642944/portfolio/van-art_desktop_yue3nq.png"
+            "https://res.cloudinary.com/scave2021/image/upload/v1674685330/portfolio/van-art-mobile.png",
+            "https://res.cloudinary.com/scave2021/image/upload/v1674685330/portfolio/van-art_desktop.png"
         ],
         "slug": "van-art-map",
-        "category": "Next.js App",
-        "role": "Full-stack Developer",
+        "category": "Full-stack Web App",
+        "role": "Full-stack Developer, UI/UX Designer",
         "title": "Vancity Public Art",
         "gitLink": "https://github.com/olimarie21/vancouver-art-map",
         "siteLink": "https://vancouver-art-map.vercel.app/",
         "shortDesc": "A map interface that displays public art in Vancouver.",
         "longDesc": [
-            "This project integrates data from the City of Vancouver's Open Data Portal with Google Maps JavaScript API, displaying location based information about outdoor public art within the City of Vancouver. The front-end interface is built using Next.js, Material UI, and Google Maps JavaScript API.",
-            "This project is still under development and features are being added, including saved locations, user image upload and custom art viewing routes. A server side component is being built with Typescript, Node, Express and Postgresql to allow for additional data storage and manipulation."
+            "This project integrates data from the City of Vancouver's Open Data Portal with Google Maps JavaScript API, displaying location based information about outdoor public art within the City of Vancouver. The front-end interface was built using Next.js, Material UI, and Google Maps JavaScript API.",
+            "The server side component was built with Typescript, Express.js, TypeORM, and Node.j, it is hosted on Heroku. For the database, I chose to use Heroku PostgreSQL for it's easy scalability and high availability. By utilizing Object-Relational Mapping with TypeORM I could quickly connect with my database and simplify the code needed to perform queries.",
+            "This project is still under development and features are being added, including saved locations, user image upload and custom art viewing routes."
         ],
         "tech": [
             "Next.js",
             "React.js",
             "Google Maps API",
             "Material UI",
-            "Git"
+            "Vercel",
+            "Git",
+            "Heroku",
+            "Typescript",
+            "Express.js",
+            "Node.js",
+            "PostgreSQL"
         ]
     },
     {

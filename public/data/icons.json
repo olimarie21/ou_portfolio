@@ -54,5 +54,13 @@
     {
         "link": "/images/logos/ec2_logo.png",
         "alt": "AWS EC2"
+    },
+    {
+        "link": "/images/logos/postgres_logo.png",
+        "alt": "PostgreSQL"
+    },
+    {
+        "link": "/images/logos/typescript_logo.png",
+        "alt": "Typescript"
     }
 ]
