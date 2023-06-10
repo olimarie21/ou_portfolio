@@ -1,9 +1,21 @@
 [
     {
+        "title": "Front-end Developer",
+        "company": "Mark Anthony Group",
+        "location": "Vancouver, B.C.",
+        "dates": "February 2023 - present",
+        "description": [
+            "Translate UI/UX designs into responsive websites using HTML, SASS, Bootstrap and JavaScript with a focus on usability, accessibility, and web standards.",
+            "Implement updates and improvements to WordPress themes, building custom page templates to showcase additional business offerings.",
+            "Collaborate with cross-functional teams in an agile environment to meet business and technical requirements.",
+            "Ensure proper performance and integration of third-party services."
+        ]
+    },
+    {
         "title": "Full-stack Developer",
         "company": "Codeca Educational Technology and Services Inc.",
         "location": "Vancouver, B.C.",
-        "dates": "August 2022 - present",
+        "dates": "August 2022 - January 2023",
         "description": [
             "Recreate primary lesson modules from scratch - writing, editing, and utilizing JavaScript to implement the updated curriculum on the browser-based virtual reality coding platform.",
             "Update the subscription flow user interface along with Stripe payment integration, simplifying the user on-boarding experience. Implement updates with JavaScript, HTML, and Sass."

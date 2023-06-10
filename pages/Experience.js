@@ -43,7 +43,7 @@ const Experience = () => {
 							Tech stack <ArrowForwardRoundedIcon />
 						</span>
 						JavaScript | React | React Native | REST APIs | GraphQL | Node.js |
-						Express.js | MongoDB | Next.js | Java
+						Express.js | MongoDB | Next.js | Java | WordPress
 					</Paragraph>
 				</div>
 
