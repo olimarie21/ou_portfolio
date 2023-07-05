@@ -39,7 +39,7 @@
         "role": "Full-Stack Developer",
         "title": "Courte",
         "gitLink": "https://github.com/Gavriil84/Team-SpaceDuck-Frontend",
-        "siteLink": "https://www.courte.app",
+        "siteLink": "https://courte-landing-page.vercel.app/",
         "proposal": "https://drive.google.com/file/d/1iIIFzdxPnvRFKfv4vhqNsdGkDpmQ3PMv/view?usp=sharing",
         "shortDesc": "A mobile application that facilitates the use and sharing of tennis courts.",
         "longDesc": [
@@ -126,7 +126,7 @@
         "role": "Full-stack Developer",
         "title": "www.courte.app",
         "gitLink": "https://github.com/olimarie21/Courte-landing-page",
-        "siteLink": "https://www.courte.app",
+        "siteLink": "https://courte-landing-page.vercel.app/",
         "shortDesc": "A Next.js powered website hosted with Vercel.",
         "longDesc": [
             "Courte is a mobile application that offers a comprehensive solution to facilitate the shared use of public tennis courts by enabling users to find the closest parks with available courts, manage queues, and connect with nearby users to play together.",
